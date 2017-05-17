@@ -1,5 +1,8 @@
 package cloudMachines;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 //Nesse documento temos 3 classes referentes às políticas, elas possuem contrutores e o método 'run()' para escrever o código que a thread irá executar.
 
 class ROI implements Runnable {
@@ -46,15 +49,17 @@ class DefineCost implements Runnable {
 public class CriadorThreads {
 
 	public void ROI(int nMaq, int Pol) {
-
+		
+		ExecutorService execService = Executors.newFixedThreadPool(nMaq); //Cria uma thread pool com um número fixo de threads (nMaq). Nesse caso, no máximo (nMaq) threads estarão em ativas simultaneamente.
+																		  //Se for necessário executar mais de nMaq tarefas, será criada uma fila de espera.
 		for (int i = 0; i < nMaq; i++) {
-			ROI RunnableROI = new ROI();				
-			Thread ThreadROI = new Thread(RunnableROI);
-			ThreadROI.start();
-			
+			execService.execute(new ROI());	//Submissão da 'task'(Execução do Runnable) ROI() para a thread.
 		}
+		
+		execService.shutdown(); //Necessária para o encerramento do programa depois que é finalizada a execução de todas as tarefas.
+		execService.execute(new ROI());
 	}
-
+	
 	public void OnDemand(int nMaq, int Pol) {
 
 		for (int i = 0; i < nMaq; i++) {
