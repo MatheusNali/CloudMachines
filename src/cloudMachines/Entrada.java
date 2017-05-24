@@ -1,6 +1,8 @@
 package cloudMachines;
 
 import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Entrada {
 
@@ -15,12 +17,12 @@ public class Entrada {
 		Pol = Sc.nextInt();
 
 		Sc.close();
-
 		CriadorThreads cTh = new CriadorThreads();
-
+				
+		ExecutorService execService = Executors.newSingleThreadExecutor(); 
 		switch (Pol) { //switch com chamada dos métodos que criam as threads de cada política.
 		case 1: Pol = 1;
-			cTh.ROI(nMaq, Pol);
+			cTh.ROI(execService, nMaq);
 			break;
 		case 2: Pol = 2;
 			cTh.OnDemand(nMaq, Pol);
