@@ -1,37 +1,25 @@
 package cloudMachines;
 
+import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 //Nesse documento temos 3 classes referentes às políticas, elas possuem contrutores e o método 'run()' para escrever o código que a thread irá executar.
+//O loop de cada algoritmo é rodado até que a Thread seja interrompida (Nesse caso, ocorre quando é pedido a liberação da máquina).
 
 class ROI implements Runnable {
 
-	private int ID;
-	private int Pol;
-	
-	public int getID() {
-		return ID;
-	}
-	public void setID(int ID) {
-		this.ID = ID;
-	}
-	public int getPol() {
-		return Pol;
-	}
-	public void setPol(int Pol) {
-		this.Pol = Pol;
-	}
-	
-	public ROI(int ID) {
-		this.ID = ID;
-		this.Pol = 1;
+	public ROI() {
+
 	}
 
 	@Override
-	public void run(){
+	public void run() {
+		while (!Thread.currentThread().isInterrupted()) {
+
+		}
 
 	}
-
 }
 
 class OnDemand implements Runnable {
@@ -60,52 +48,22 @@ class DefineCost implements Runnable {
 
 }
 
-//A classe CriadorThreads possui os métodos que são chamados no switch do arquivo 'Entrada.java'. Foi feito um loop com o for para criar a quantidade 'nMaq' de threads.
+// A classe CriadorThreads possui os métodos que são chamados no switch do arquivo 'Entrada.java'. Foi feito um loop com o for para criar a quantidade 'nMaq' de threads.
 
 public class CriadorThreads {
-	
-	public void ROI(ExecutorService execService, int nMaq) {
-		
-		int Counter = 1;
-																  
-		for (int i = 0; i < nMaq; i++) {
-			execService.submit(new ROI(Counter)); //Submissão da 'task'(Execução do Runnable) ROI() para a thread.
-			execService.submit(new OnDemand());
-			Counter++;
-		}
-		
-		execService.shutdown(); //Necessária para o encerramento do programa depois que é finalizada a execução de todas as tarefas.
-	}
-	
-	public void OnDemand(int nMaq, int Pol) {
+
+	public void ROI(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures) {
 
 		for (int i = 0; i < nMaq; i++) {
-			OnDemand RunnableOnDemand = new OnDemand();
-			Thread ThreadOnDemand = new Thread(RunnableOnDemand);
-			ThreadOnDemand.start();
-
-			try {
-				ThreadOnDemand.join();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			Futures.add(execService.submit(new ROI())); // Submissão da 'task'(Execução do Runnable) ROI() para a thread.
 		}
 	}
 
-	public void DefineCost(int nMaq, int Pol) {
+	public void OnDemand(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures) {
 
-		for (int i = 0; i < nMaq; i++) {
-			DefineCost RunnableDefineCost = new DefineCost();
-			Thread ThreadDefineCost = new Thread(RunnableDefineCost);
-			ThreadDefineCost.start();
+	}
 
-			try {
-				ThreadDefineCost.join();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+	public void DefineCost(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures) {
+
 	}
 }
