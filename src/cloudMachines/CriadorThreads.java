@@ -9,8 +9,9 @@ import java.util.concurrent.Future;
 
 class ROI implements Runnable {
 
-	public ROI() {
-
+	public ROI(ArrayList<ArrayList<Integer>> ThLog, int ID) {
+		ThLog.get(1).add(ID);
+		ID++;
 	}
 
 	@Override
@@ -30,7 +31,9 @@ class OnDemand implements Runnable {
 
 	@Override
 	public void run() {
+		while (!Thread.currentThread().isInterrupted()) {
 
+		}
 	}
 
 }
@@ -43,27 +46,34 @@ class DefineCost implements Runnable {
 
 	@Override
 	public void run() {
+		while (!Thread.currentThread().isInterrupted()) {
 
+		}
 	}
 
 }
 
-// A classe CriadorThreads possui os métodos que são chamados no switch do arquivo 'Entrada.java'. Foi feito um loop com o for para criar a quantidade 'nMaq' de threads.
+// A classe CriadorThreads possui os métodos que são chamados no switch do
+// arquivo 'Entrada.java'. Foi feito um loop com o for para criar a quantidade
+// 'nMaq' de threads.
 
 public class CriadorThreads {
 
-	public void ROI(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures) {
+	public void ROI(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int ID) {
 
 		for (int i = 0; i < nMaq; i++) {
-			Futures.add(execService.submit(new ROI())); // Submissão da 'task'(Execução do Runnable) ROI() para a thread.
+			
+			Futures.add(execService.submit(new ROI(ThLog, ID))); // Submissão da 'task'(Execução do Runnable) ROI() para a thread.
 		}
 	}
 
-	public void OnDemand(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures) {
+	public void OnDemand(ExecutorService execService, int nMaq, ArrayList<Future> Futures,
+			ArrayList<Integer> idFutures) {
 
 	}
 
-	public void DefineCost(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures) {
+	public void DefineCost(ExecutorService execService, int nMaq, ArrayList<Future> Futures,
+			ArrayList<Integer> idFutures) {
 
 	}
 }
