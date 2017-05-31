@@ -17,6 +17,7 @@ class ROI implements Runnable {
 	@Override
 	public void run() {
 		while (!Thread.currentThread().isInterrupted()) {
+
 		}
 	}
 }

@@ -61,7 +61,7 @@ public class ControleEntrada {
 			}
 
 			else if (Op == 4) {
-				if (!vTarefasAtivas(Futures)){
+				if (vTarefasAtivas(Futures)){
 					System.out.println("Ainda há tarefas ativas, deseja finalizá-las?");
 					System.out.println("1 = Não, 2 = Sim.");
 					if (Sc.nextInt() == 2) {
@@ -103,7 +103,7 @@ public class ControleEntrada {
 		System.out.println("Programa Encerrado.");
 	}
 	
-//Por enquanto o print � apenas do ID mas podemos adicionar conforme mudamos o c�digo
+//Por enquanto o print é apenas do ID mas podemos adicionar conforme mudamos o código
 	private static void MostrarThLog(ArrayList<ArrayList<Integer>> ThLog) {
 		System.out.println("");
 		int i = 0;
