@@ -24,8 +24,8 @@ class ROI implements Runnable {
 
 class OnDemand implements Runnable {
 
-	public OnDemand() {
-
+	public OnDemand(ArrayList<ArrayList<Integer>> ThLog, int ID) {
+		ThLog.get(1).add(ID);
 	}
 
 	@Override
@@ -39,10 +39,10 @@ class OnDemand implements Runnable {
 
 class DefineCost implements Runnable {
 
-	public DefineCost() {
-
+	public DefineCost(ArrayList<ArrayList<Integer>> ThLog, int ID) {
+		ThLog.get(1).add(ID);
 	}
-
+	
 	@Override
 	public void run() {
 		while (!Thread.currentThread().isInterrupted()) {
@@ -67,13 +67,11 @@ public class CriadorThreads {
 		}
 	}
 
-	public void OnDemand(ExecutorService execService, int nMaq, ArrayList<Future> Futures,
-			ArrayList<Integer> idFutures) {
-
+	public void OnDemand(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int ID) {
+		Futures.add(execService.submit(new OnDemand(ThLog, ID)));
 	}
 
-	public void DefineCost(ExecutorService execService, int nMaq, ArrayList<Future> Futures,
-			ArrayList<Integer> idFutures) {
-
+	public void DefineCost(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int ID) {
+		Futures.add(execService.submit(new DefineCost(ThLog, ID)));
 	}
 }

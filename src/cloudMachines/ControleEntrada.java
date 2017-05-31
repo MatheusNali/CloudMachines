@@ -85,11 +85,11 @@ public class ControleEntrada {
 				ID += nMaq;
 				break;
 			case 2:
-				cTh.OnDemand(execService, nMaq, Futures, idFutures);
+				cTh.OnDemand(execService, nMaq, Futures, ThLog, ID);
 				ID += nMaq;
 				break;
 			case 3:
-				cTh.DefineCost(execService, nMaq, Futures, idFutures);
+				cTh.DefineCost(execService, nMaq, Futures, ThLog, ID);
 				ID += nMaq;
 				break;
 			default:
