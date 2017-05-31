@@ -7,19 +7,17 @@ import java.util.concurrent.Future;
 //Nesse documento temos 3 classes referentes às políticas, elas possuem contrutores e o método 'run()' para escrever o código que a thread irá executar.
 //O loop de cada algoritmo é rodado até que a Thread seja interrompida (Nesse caso, ocorre quando é pedido a liberação da máquina).
 
-class ROI implements Runnable {
 
+class ROI implements Runnable {
+	
 	public ROI(ArrayList<ArrayList<Integer>> ThLog, int ID) {
 		ThLog.get(1).add(ID);
-		ID++;
 	}
 
 	@Override
 	public void run() {
 		while (!Thread.currentThread().isInterrupted()) {
-
 		}
-
 	}
 }
 
@@ -64,6 +62,7 @@ public class CriadorThreads {
 		for (int i = 0; i < nMaq; i++) {
 			
 			Futures.add(execService.submit(new ROI(ThLog, ID))); // Submissão da 'task'(Execução do Runnable) ROI() para a thread.
+			ID++;
 		}
 	}
 

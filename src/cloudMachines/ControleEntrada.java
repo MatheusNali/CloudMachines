@@ -5,9 +5,12 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ControleEntrada {
-
+	private static final Logger logger = LogManager.getLogger();
+	
 	public static void main(String[] args) {
 
 		Boolean pLoop = true;
@@ -49,12 +52,12 @@ public class ControleEntrada {
 				} else if (Op == 2) {
 					System.out.println("Qual máquina deseja liberar (ID)?");
 					idMaqFree = Sc.nextInt();
-					LiberarMaqID(nMaq, Futures, idFutures, idMaqFree);
+					LiberarMaqID(nMaq, Futures, ThLog, idMaqFree);
 				}
 			}
 
 			else if (Op == 3) {
-				MostrarThLog(Futures);
+				MostrarThLog(ThLog);
 			}
 
 			else if (Op == 4) {
@@ -79,12 +82,15 @@ public class ControleEntrada {
 
 			case 1:
 				cTh.ROI(execService, nMaq, Futures, ThLog, ID);
+				ID += nMaq;
 				break;
 			case 2:
 				cTh.OnDemand(execService, nMaq, Futures, idFutures);
+				ID += nMaq;
 				break;
 			case 3:
 				cTh.DefineCost(execService, nMaq, Futures, idFutures);
+				ID += nMaq;
 				break;
 			default:
 				break;
@@ -96,9 +102,21 @@ public class ControleEntrada {
 		Sc.close();
 		System.out.println("Programa Encerrado.");
 	}
-
-	private static void MostrarThLog(ArrayList<Future> Futures) {
-		System.out.println("Nada aqui =/");
+	
+//Por enquanto o print � apenas do ID mas podemos adicionar conforme mudamos o c�digo
+	private static void MostrarThLog(ArrayList<ArrayList<Integer>> ThLog) {
+		System.out.println("");
+		int i = 0;
+		while(i < ThLog.get(1).size()){
+			logger.info("Maquina online: "+ThLog.get(1).get(i).toString());
+			i++;
+		}
+		i=0;
+		while(i < ThLog.get(0).size()){
+			logger.info("Maquina offline: "+ThLog.get(0).get(i).toString());
+			i++;
+		}
+		System.out.println("");
 	}
 
 	private static void LiberarMaqs(ArrayList<Future> Futures) {
@@ -106,7 +124,6 @@ public class ControleEntrada {
 			Futures.get(0).cancel(true);
 			Futures.remove(0);
 		}
-
 	}
 
 	private static boolean vTarefasAtivas(ArrayList<Future> Futures) {
@@ -148,20 +165,23 @@ public class ControleEntrada {
 	}
 
 	// O ID é a posição da task no ArrayList de Future. Precisa melhorar e colocar o ID certo (Banco de dados).
-	public static void LiberarMaqID(int nMaq, ArrayList<Future> Futures, ArrayList<Integer> idFutures, int idMaqFree) {
-		int i = 0;
+	public static void LiberarMaqID(int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int idMaqFree) {
+		int MaqAtual = 0, MaqAtualAtiva = 0;
 
-		while (i < nMaq) {
-			if ((!Futures.get(i).isDone()) && (idFutures.get(i) == idMaqFree)) {
-				Futures.get(i).cancel(true);
-				Futures.remove(i);
-				System.out.println("");
-				System.out.println("----------------------");
-				System.out.println("Finalizando máquina " + (i + 1));
-				System.out.println("----------------------");
-				System.out.println("");
+		while (MaqAtual < nMaq) {
+			if (ThLog.get(1).get(MaqAtualAtiva) == idMaqFree) {
+				if (Futures.get(MaqAtual).cancel(true)) {
+					Futures.remove(MaqAtual);
+					ThLog.get(0).add(ThLog.get(1).get(MaqAtual));
+					ThLog.get(1).remove(MaqAtual);
+					System.out.println("");
+					System.out.println("Finalizando máquina " + MaqAtual);
+					System.out.println("");
+					return;
+				}
 			}
-			i++;
+			if (!Futures.get(MaqAtual).isDone()) MaqAtualAtiva++;
+			MaqAtual++;
 		}
 	}
 }
