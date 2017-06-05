@@ -1,0 +1,12 @@
+package com.cloudmachines;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CloudMachinesApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CloudMachinesApplication.class, args);
+	}
+}
