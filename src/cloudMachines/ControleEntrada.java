@@ -14,7 +14,7 @@ public class ControleEntrada {
 	public static void main(String[] args) {
 
 		Boolean pLoop = true;
-		int nMaq = 0, Pol = 0, Op = 0, idMaqFree = 0;
+		int nMaq = 0, Pol = 0, Op = 0;
 
 		ArrayList<ArrayList<Integer>> ThLog = new ArrayList<ArrayList<Integer>>(); int ID = 0; // Variáveis para logging.
 		ThLog.add(new ArrayList<Integer>()); // Posição 0 para Threads em modo sleep.
