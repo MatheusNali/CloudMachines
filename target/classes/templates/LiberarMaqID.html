@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"/>
+<title>Liberar Máquinas por ID</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Cloud Machines" src="" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <form class="form-horizontal" method="POST" action="/titulos">
+    	<div class="panel panel-default">
+    		<div class="panel-heading">
+    			<h1 class="panel-title">Liberar Máquinas por ID</h1>
+    		</div>
+    		
+    		<div class="panel-body">
+				<div class="form-group">
+					<label for="descricao" class="col-sm-2 control-label"><b>ID da Máquina:</b></label>
+					<div class="col-sm-1"> 
+						<input type="text" class="form-control" id="descricao" name="descricao"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-primary">Liberar</button>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </form>
+
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
