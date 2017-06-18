@@ -10,14 +10,14 @@
 	<nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="Homepage">
                     <img alt="Cloud Machines" src="" />
                 </a>
             </div>
         </div>
     </nav>
     
-    <form class="form-horizontal" method="POST" action="/titulos">
+    <form class="form-horizontal" method="POST" action="AlugarMaq">
     	<div class="panel panel-default">
     		<div class="panel-heading">
     			<h1 class="panel-title">Alugar Máquinas</h1>
@@ -25,24 +25,24 @@
     		
     		<div class="panel-body">
 				<div class="form-group">
-					<label for="descricao" class="col-sm-2 control-label">Número de Máquinas</label>
+					<label for="descricao" class="col-sm-2 control-label"><b>Número de Máquinas:</b></label>
 					<div class="col-sm-1"> 
 						<input type="text" class="form-control" id="descricao" name="descricao"/>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="Política" class="col-sm-2 control-label">Política</label>
+					<label for="Política" class="col-sm-2 control-label"><b>Política:</b></label>
 					<div class="col-sm-2">
 						<select class="form-control" name="Política">
-							<option value="ROI">ROI</option>
-							<option value="Ondemand">Ondemand</option>
-							<option value="DefineCost">DefineCost</option>
+							<option value="1">ROI</option>
+							<option value="2">Ondemand</option>
+							<option value="3">DefineCost</option>
                     	</select>
                     </div>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-primary">Salvar</button>
+						<button type="submit" class="btn btn-primary" value="aluga">Salvar</button>
 					</div>
 				</div>
 			</div>
