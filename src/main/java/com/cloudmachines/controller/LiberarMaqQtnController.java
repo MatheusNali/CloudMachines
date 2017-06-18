@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LiberarMaqQtnController{
 
 	@RequestMapping("CloudMachines/LiberarMaqQtn")
-	public String Homepage(){
+	public String LiberarMaqQtn(){
 		return "LiberarMaqQtn";
 	}
 }

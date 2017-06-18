@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class VerLogController {
 
 	@RequestMapping("CloudMachines/VerLog")
-	public String Homepage(){
+	public String VerLog(){
 		return "VerLog";
-	}
+	}		
 }

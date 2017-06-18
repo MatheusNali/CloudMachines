@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomepageController {
 	
-	@RequestMapping("CloudMachines")
+	@RequestMapping("CloudMachines/Homepage")
 	public String Homepage(){
 		return "Homepage";
 	}
