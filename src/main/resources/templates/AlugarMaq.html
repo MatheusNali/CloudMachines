@@ -17,7 +17,7 @@
         </div>
     </nav>
     
-    <form class="form-horizontal" method="POST" action="AlugarMaq">
+    <form class="form-horizontal" method="POST" action="/CloudMachines/AlugarMaq">
     	<div class="panel panel-default">
     		<div class="panel-heading">
     			<h1 class="panel-title">Alugar Máquinas</h1>
@@ -27,16 +27,16 @@
 				<div class="form-group">
 					<label for="descricao" class="col-sm-2 control-label"><b>Número de Máquinas:</b></label>
 					<div class="col-sm-1"> 
-						<input type="text" class="form-control" id="descricao" name="descricao"/>
+						<input type="text" class="form-control" id="nMaq" name="nMaq"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="Política" class="col-sm-2 control-label"><b>Política:</b></label>
 					<div class="col-sm-2">
-						<select class="form-control" name="Política">
-							<option value="1">ROI</option>
-							<option value="2">Ondemand</option>
-							<option value="3">DefineCost</option>
+						<select class="form-control" name="Pol">
+							<option value="ROI">ROI</option>
+							<option value="OnDemand">Ondemand</option>
+							<option value="DefineCost">DefineCost</option>
                     	</select>
                     </div>
 				</div>
