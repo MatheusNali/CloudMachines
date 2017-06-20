@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 <title>Alugar Máquinas</title>
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="Homepage">
-                    <img alt="Cloud Machines" src="" />
-                </a>
-            </div>
-        </div>
-    </nav>
-    
-    <form class="form-horizontal" method="POST" action="/CloudMachines/AlugarMaq">
-    	<div class="panel panel-default">
-    		<div class="panel-heading">
-    			<h1 class="panel-title">Alugar Máquinas</h1>
-    		</div>
-    		
-    		<div class="panel-body">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="Homepage"> <img alt="Cloud Machines" src="/images/logo.png" />
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<form class="form-horizontal" method="POST"
+		action="/CloudMachines/AlugarMaq">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1 class="panel-title">Alugar Máquinas</h1>
+			</div>
+
+			<div class="panel-body">
 				<div class="form-group">
-					<label for="descricao" class="col-sm-2 control-label"><b>Número de Máquinas:</b></label>
-					<div class="col-sm-1"> 
-						<input type="text" class="form-control" id="nMaq" name="nMaq"/>
+					<label for="descricao" class="col-sm-2 control-label"><b>Número
+							de Máquinas:</b></label>
+					<div class="col-sm-1">
+						<input type="text" class="form-control" id="nMaq" name="nMaq" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -35,10 +36,10 @@
 					<div class="col-sm-2">
 						<select class="form-control" name="Pol">
 							<option value="ROI">ROI</option>
-							<option value="OnDemand">Ondemand</option>
+							<option value="OnDemand">OnDemand</option>
 							<option value="DefineCost">DefineCost</option>
-                    	</select>
-                    </div>
+						</select>
+					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
@@ -46,9 +47,9 @@
 					</div>
 				</div>
 			</div>
-    	</div>
-    </form>
+		</div>
+	</form>
 
-<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

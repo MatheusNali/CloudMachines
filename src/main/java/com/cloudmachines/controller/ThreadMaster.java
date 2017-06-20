@@ -1,89 +1,91 @@
 package com.cloudmachines.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+class ROI implements Runnable {
+
+	public ROI() {
+
+	}
+
+	@Override
+	public void run() {
+		while (!Thread.currentThread().isInterrupted()) {
+
+		}
+	}
+}
+
+class OnDemand implements Runnable {
+
+	public OnDemand() {
+
+	}
+
+	@Override
+	public void run() {
+		while (!Thread.currentThread().isInterrupted()) {
+
+		}
+	}
+
+}
+
+class DefineCost implements Runnable {
+
+	public DefineCost() {
+
+	}
+
+	@Override
+	public void run() {
+		while (!Thread.currentThread().isInterrupted()) {
+
+		}
+	}
+
+}
+
 public class ThreadMaster {
+	ExecutorService execService;
+	ArrayList<Future> Futures;
+	Logging Log;
+	ArrayList<Logging> ArrLog;
+	int iDCliente = 42;
 
-	// Nesse documento temos 3 classes referentes às políticas, elas possuem
-	// contrutores e o método 'run()' para escrever o código que a thread irá
-	// executar.
-	// O loop de cada algoritmo é rodado até que a Thread seja interrompida
-	// (Nesse caso, ocorre quando é pedido a liberação da máquina).
-
-	class ROI implements Runnable {
-
-		public ROI(ArrayList<ArrayList<Integer>> ThLog, int ID) {
-			ThLog.get(1).add(ID);
-		}
-
-		@Override
-		public void run() {
-			while (!Thread.currentThread().isInterrupted()) {
-
-			}
-		}
+	public ThreadMaster() {
+		execService = Executors.newFixedThreadPool(5);
+		Futures = new ArrayList<Future>();
+		ArrLog = new ArrayList<Logging>();
+		Log = new Logging();
 	}
 
-	class OnDemand implements Runnable {
-
-		public OnDemand(ArrayList<ArrayList<Integer>> ThLog, int ID) {
-			ThLog.get(1).add(ID);
-		}
-
-		@Override
-		public void run() {
-			while (!Thread.currentThread().isInterrupted()) {
-
-			}
-		}
-
-	}
-
-	class DefineCost implements Runnable {
-
-		public DefineCost(ArrayList<ArrayList<Integer>> ThLog, int ID) {
-			ThLog.get(1).add(ID);
-		}
-
-		@Override
-		public void run() {
-			while (!Thread.currentThread().isInterrupted()) {
-
-			}
-		}
-
-	}
-
-	// A classe CriadorThreads possui os métodos que são chamados no switch do
-	// arquivo 'Entrada.java'. Foi feito um loop com o for para criar a
-	// quantidade
-	// 'nMaq' de threads.
-
-	public class CriadorThreads {
+	public void ROI(int nMaq) {
 		
-		public void CriaConstrutor(){
-			ExecutorService execService = Executors.newFixedThreadPool(100);
-			ArrayList<Future> Futures = new ArrayList<Future>();
+		for (int i = 0; i < nMaq; i++) {
+			PreencheLog(Log, iDCliente);
+			ArrLog.add(Log);
+			Futures.add(execService.submit(new ROI()));
+			
 		}
+	}
 
-		public void ROI(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int ID) {
+	private void PreencheLog(Logging Log, int iDCliente) {
+		Log.setDataIni(new Date());
+		Log.setEstado(1);
+		Log.setIDCliente(iDCliente);
+		
+	}
 
-			for (int i = 0; i < nMaq; i++) {
+	public void OnDemand(int nMaq) {
+		Futures.add(execService.submit(new OnDemand()));
+	}
 
-				Futures.add(execService.submit(new ROI(ThLog, ID))); // Submissão da 'task'(Execução do Runnable) ROI() para a thread.
-				ID++;
-			}
-		}
-
-		public void OnDemand(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int ID) {
-			Futures.add(execService.submit(new OnDemand(ThLog, ID)));
-		}
-
-		public void DefineCost(ExecutorService execService, int nMaq, ArrayList<Future> Futures, ArrayList<ArrayList<Integer>> ThLog, int ID) {
-			Futures.add(execService.submit(new DefineCost(ThLog, ID)));
-		}
+	public void DefineCost(int nMaq) {
+		Futures.add(execService.submit(new DefineCost()));
 	}
 }

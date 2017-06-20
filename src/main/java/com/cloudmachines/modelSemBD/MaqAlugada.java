@@ -10,6 +10,13 @@ import javax.persistence.Id;
 @Entity
 public class MaqAlugada {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int nMaq;
+
+	@Enumerated(EnumType.STRING)
+	private Politica Pol;
+
 	public int getnMaq() {
 		return nMaq;
 	}
@@ -18,19 +25,11 @@ public class MaqAlugada {
 		this.nMaq = nMaq;
 	}
 
-	public Politica getPol() {
+	public Politica getPolEnum() {
 		return Pol;
 	}
 
-	public void setPol(Politica pol) {
-		Pol = pol;
+	public void setPol(Politica Pol) {
+		this.Pol = Pol;
 	}
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int nMaq;
-
-	@Enumerated(EnumType.STRING)
-	private Politica Pol;
-
 }

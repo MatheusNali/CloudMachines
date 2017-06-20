@@ -2,17 +2,17 @@ package com.cloudmachines.modelSemBD;
 
 public enum Politica {
 
-	ROI("Roi"),
-	ONDEMAND("OnDemand"),
-	DEFINECOST("DefineCost");
+	ROI("ROI"),
+	OnDemand("OnDemand"),
+	DefineCost("DefineCost");
 	
-	private String pol;
+	private String Pol;
 	
-	Politica(String pol){
-		this.pol = pol;
+	Politica(String Pol){
+		this.Pol = Pol;
 	}
 	
 	public String getPol(){
-		return pol;
+		return Pol;
 	}
 }

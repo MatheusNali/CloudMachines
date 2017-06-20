@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 <title>Liberar Máquinas por Quantidade</title>
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
 <script src="bootstrap/js/header.js"></script>
 </head>
 <body>
 	<header id="header"></header>
-    
-    <form class="form-horizontal" method="POST" action="/titulos">
-    	<div class="panel panel-default">
-    		<div class="panel-heading">
-    			<h1 class="panel-title">Liberar Máquinas por Quantidade</h1>
-    		</div>
-    		
-    		<div class="panel-body">
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="Homepage"> <img alt="Cloud Machines" src="/images/logo.png" />
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<form class="form-horizontal" method="POST" action="/titulos">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1 class="panel-title">Liberar Máquinas por Quantidade</h1>
+			</div>
+
+			<div class="panel-body">
 				<div class="form-group">
-					<label for="descricao" class="col-sm-2 control-label"><b>Quantidade de Máquinas:</b></label>
-					<div class="col-sm-1"> 
-						<input type="text" class="form-control" id="descricao" name="descricao"/>
+					<label for="descricao" class="col-sm-2 control-label"><b>Quantidade	de Máquinas:</b></label>
+					<div class="col-sm-1">
+						<input type="text" class="form-control" id="descricao"
+							name="descricao" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -29,9 +38,9 @@
 					</div>
 				</div>
 			</div>
-    	</div>
-    </form>
+		</div>
+	</form>
 
-<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
