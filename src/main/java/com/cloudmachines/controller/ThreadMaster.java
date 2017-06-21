@@ -88,4 +88,8 @@ public class ThreadMaster {
 	public void DefineCost(int nMaq) {
 		Futures.add(execService.submit(new DefineCost()));
 	}
+	
+	public Logging getLog(){
+		return Log;
+	}
 }

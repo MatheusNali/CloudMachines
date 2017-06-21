@@ -8,7 +8,7 @@ import com.cloudmachines.modelSemBD.MaqAlugada;
 @Controller
 public class AlugarMaqController {
 	
-	ThreadMaster ThMaster;
+	static ThreadMaster ThMaster;
 
 	@RequestMapping("CloudMachines/AlugarMaq")
 	public String AlugarMaq(){
