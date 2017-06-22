@@ -28,6 +28,8 @@ public class AlugarMaqController {
 			ThMaster.DefineCost(maqAlugada.getnMaq());
 		}
 		
+		VerLogController.Standart_Log();
+		
 		return "VerLog";
 	}
 }

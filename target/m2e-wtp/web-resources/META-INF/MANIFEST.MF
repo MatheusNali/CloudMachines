@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: CloudMachines
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: augus
+Built-By: az
 Implementation-Vendor-Id: com.cloudmachines
-Build-Jdk: 1.8.0_111
+Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/CloudMachine
  s/
 Created-By: Maven Integration for Eclipse
