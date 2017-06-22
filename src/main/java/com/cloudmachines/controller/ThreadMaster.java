@@ -56,9 +56,12 @@ public class ThreadMaster {
 	Logging Log;
 	ArrayList<Logging> ArrLog;
 	int iDCliente = 42;
+	int ID = 0;
+	int maxThread = 5;
+	int par_nMaq = 0;
 
 	public ThreadMaster() {
-		execService = Executors.newFixedThreadPool(5);
+		execService = Executors.newFixedThreadPool(maxThread);
 		Futures = new ArrayList<Future>();
 		ArrLog = new ArrayList<Logging>();
 		Log = new Logging();
@@ -67,11 +70,59 @@ public class ThreadMaster {
 	public void ROI(int nMaq) {
 		
 		for (int i = 0; i < nMaq; i++) {
-			PreencheLog(Log, iDCliente);
-			ArrLog.add(Log);
-			Futures.add(execService.submit(new ROI()));
-			
+			if (par_nMaq<get_maxThread()){
+				PreencheLog(Log, iDCliente);
+				ArrLog.add(Log);
+				Futures.add(execService.submit(new ROI()));
+				Log.setPolicy(1, ID);
+				ID++;
+			}
+			else{
+				i=nMaq;
+				VerLogController.LogWarn("A alocacao de maquinas nao pode ser completada");
+			}
 		}
+	}
+
+	public void OnDemand(int nMaq) {
+		for (int i = 0; i < nMaq; i++) {
+			if (par_nMaq<get_maxThread()){
+				PreencheLog(Log, iDCliente);
+				ArrLog.add(Log);
+				Futures.add(execService.submit(new OnDemand()));
+				Log.setPolicy(2, ID);
+				ID++;
+			}
+			else{
+				i=nMaq;
+				VerLogController.LogWarn("A alocacao de maquinas nao pode ser completada");
+			}
+		}
+	}
+
+	public void DefineCost(int nMaq) {
+		for (int i = 0; i < nMaq; i++) {
+			if (par_nMaq<get_maxThread()){
+				PreencheLog(Log, iDCliente);
+				ArrLog.add(Log);
+				Futures.add(execService.submit(new DefineCost()));
+				Log.setPolicy(3, ID);
+				ID++;
+			}
+			else{
+				i=nMaq;
+				VerLogController.LogWarn("A alocacao de maquinas nao pode ser completada");
+			}
+		}
+	}
+	
+	public Logging getLog(){
+		return Log;
+	}
+	
+	public int get_maxThread(){
+		par_nMaq++;
+		return maxThread;
 	}
 
 	private void PreencheLog(Logging Log, int iDCliente) {
@@ -79,21 +130,5 @@ public class ThreadMaster {
 		Log.setEstado(1);
 		Log.setIDCliente(iDCliente);
 		
-	}
-
-	public void OnDemand(int nMaq) {
-		PreencheLog(Log, iDCliente);
-		ArrLog.add(Log);
-		Futures.add(execService.submit(new OnDemand()));
-	}
-
-	public void DefineCost(int nMaq) {
-		PreencheLog(Log, iDCliente);
-		ArrLog.add(Log);
-		Futures.add(execService.submit(new DefineCost()));
-	}
-	
-	public Logging getLog(){
-		return Log;
 	}
 }

@@ -30,14 +30,12 @@ public class AlugarMaqController {
 		}else if(maqAlugada.getPolEnum().equals("DefineCost")){
 			ThMaster.DefineCost(maqAlugada.getnMaq());
 		}
+		else{
+			VerLogController.LogWarn("A maquina nao pode ser alocada");
+		}
 		
 		VerLogController.Standart_Log();
 		
 		return "VerLog";
 	}
 }
-	
-	
-	
-	
-

@@ -29,10 +29,36 @@ public class VerLogController {
 	public static void Standart_Log(){
 		if (AlugarMaqController.ThMaster != null && AlugarMaqController.ThMaster.getLog() != null){
 			Logging Log = AlugarMaqController.ThMaster.getLog();
+			String estado;
+			int i = 0;
+			if (Log.getEstado() == 1) estado = "Ativo";
+			else estado = "Inativo";
 			LogMessage(true,"Cliente "+Integer.toString(Log.getIDCliente()));
-			LogMessage(false,"Estado: "+Integer.toString(Log.getEstado()));
+			LogMessage(false,"Estado: "+estado);
 			LogMessage(false,"Inicio: "+Log.getDataIni().toString());
 			if(Log.getDataFim() != null) LogMessage(false,"Fim: "+Log.getDataFim().toString());		
+			LogMessage(false,"Politicas e numero de maquinas:");
+			LogMessage(false,"ROI: "+Integer.toString(Log.getPolicy(1).size())+" maquinas");
+			if (!Log.getPolicy(1).isEmpty()){
+				while (i < Log.getPolicy(1).size()){
+					LogMessage(false,"Maquina: "+Integer.toString(Log.getPolicy(1).get(i)));
+					i++;
+				}
+			}
+			if (!Log.getPolicy(2).isEmpty()){
+				LogMessage(false,"OnDemand: "+Integer.toString(Log.getPolicy(2).size()));
+				while (i < Log.getPolicy(2).size()){
+					LogMessage(false,"Maquina: "+Integer.toString(Log.getPolicy(2).get(i)));
+					i++;
+				}
+			}
+			if (!Log.getPolicy(3).isEmpty()){
+				LogMessage(false,"DefineCost: "+Integer.toString(Log.getPolicy(3).size()));
+				while (i < Log.getPolicy(3).size()){
+					LogMessage(false,"Maquina: "+Integer.toString(Log.getPolicy(3).get(i)));
+					i++;
+				}
+			}
 		}
 		else
 			LogWarn("Nao foram encontradas maquinas alugadas");
