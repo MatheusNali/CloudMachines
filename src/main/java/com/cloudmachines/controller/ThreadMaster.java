@@ -82,10 +82,14 @@ public class ThreadMaster {
 	}
 
 	public void OnDemand(int nMaq) {
+		PreencheLog(Log, iDCliente);
+		ArrLog.add(Log);
 		Futures.add(execService.submit(new OnDemand()));
 	}
 
 	public void DefineCost(int nMaq) {
+		PreencheLog(Log, iDCliente);
+		ArrLog.add(Log);
 		Futures.add(execService.submit(new DefineCost()));
 	}
 	

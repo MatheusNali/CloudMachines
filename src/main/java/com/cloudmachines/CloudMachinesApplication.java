@@ -10,6 +10,5 @@ public class CloudMachinesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CloudMachinesApplication.class, args);
-		VerLogController.Standart_Log();
 	}
 }

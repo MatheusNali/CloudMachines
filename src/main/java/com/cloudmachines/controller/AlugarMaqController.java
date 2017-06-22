@@ -18,7 +18,10 @@ public class AlugarMaqController {
 	@RequestMapping(value = "CloudMachines/AlugarMaq", method = RequestMethod.POST)
 	public String Salvar(MaqAlugada maqAlugada){
 		
-		ThMaster = new ThreadMaster();
+		if(ThMaster == null){
+			ThMaster = new ThreadMaster();
+			System.out.println("kaka");
+		}
 		
 		if(maqAlugada.getPolEnum().getPol().equals("ROI")){
 			ThMaster.ROI(maqAlugada.getnMaq());
