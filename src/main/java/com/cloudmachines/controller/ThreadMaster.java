@@ -52,8 +52,8 @@ class DefineCost implements Runnable {
 
 public class ThreadMaster {
 	ExecutorService execService;
-	ArrayList<Future> Futures;
-	Logging Log;
+	static ArrayList<Future> Futures;
+	static Logging Log;
 	ArrayList<Logging> ArrLog;
 	int iDCliente = 42;
 	int ID = 0;
@@ -72,9 +72,9 @@ public class ThreadMaster {
 		for (int i = 0; i < nMaq; i++) {
 			if (par_nMaq<get_maxThread()){
 				PreencheLog(Log, iDCliente);
-				ArrLog.add(Log);
 				Futures.add(execService.submit(new ROI()));
 				Log.setPolicy(1, ID);
+				ArrLog.add(Log);
 				ID++;
 			}
 			else{
@@ -88,9 +88,9 @@ public class ThreadMaster {
 		for (int i = 0; i < nMaq; i++) {
 			if (par_nMaq<get_maxThread()){
 				PreencheLog(Log, iDCliente);
-				ArrLog.add(Log);
 				Futures.add(execService.submit(new OnDemand()));
 				Log.setPolicy(2, ID);
+				ArrLog.add(Log);
 				ID++;
 			}
 			else{
@@ -104,9 +104,9 @@ public class ThreadMaster {
 		for (int i = 0; i < nMaq; i++) {
 			if (par_nMaq<get_maxThread()){
 				PreencheLog(Log, iDCliente);
-				ArrLog.add(Log);
 				Futures.add(execService.submit(new DefineCost()));
 				Log.setPolicy(3, ID);
+				ArrLog.add(Log);
 				ID++;
 			}
 			else{
@@ -130,5 +130,13 @@ public class ThreadMaster {
 		Log.setEstado(1);
 		Log.setIDCliente(iDCliente);
 		
+	}
+	
+	private ArrayList<Future> getFutures(){
+		return Futures;
+	}
+	
+	private ArrayList<Logging> getArrLog(){
+		return ArrLog;
 	}
 }

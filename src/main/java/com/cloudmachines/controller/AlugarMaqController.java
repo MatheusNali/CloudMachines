@@ -20,18 +20,17 @@ public class AlugarMaqController {
 		
 		if(ThMaster == null){
 			ThMaster = new ThreadMaster();
-			System.out.println("kaka");
 		}
 		
 		if(maqAlugada.getPolEnum().getPol().equals("ROI")){
 			ThMaster.ROI(maqAlugada.getnMaq());
-		}else if(maqAlugada.getPolEnum().equals("OnDemand")){
+		}else if(maqAlugada.getPolEnum().getPol().equals("OnDemand")){
 			ThMaster.OnDemand(maqAlugada.getnMaq());
-		}else if(maqAlugada.getPolEnum().equals("DefineCost")){
+		}else if(maqAlugada.getPolEnum().getPol().equals("DefineCost")){
 			ThMaster.DefineCost(maqAlugada.getnMaq());
 		}
 		else{
-			VerLogController.LogWarn("A maquina nao pode ser alocada");
+			VerLogController.LogWarn("A máquina não pode ser alocada");
 		}
 		
 		VerLogController.Standart_Log();

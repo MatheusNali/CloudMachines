@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 public class VerLogController {
 
 	private static Logger logger = LoggerFactory.getLogger("com.cloudmachines.controller.LogController");
-	//Necessario para log ele imprime tudo no console e cria um arquivo de log mais detalhado
+	//Necessário para log ele imprime tudo no console e cria um arquivo de log mais detalhado
 	
 	//Função genérica de log, usando o separator para um destaque no log
 	//e o message para o texto que deve ser escrito
@@ -21,7 +21,7 @@ public class VerLogController {
 	
 	public static void LogWarn(String message){
 		logger.warn("");
-	    logger.warn("---------------ATENCAO------------------");
+	    logger.warn("---------------ATENÇÃO------------------");
 		logger.warn(message);
 	}
 	
@@ -35,33 +35,33 @@ public class VerLogController {
 			else estado = "Inativo";
 			LogMessage(true,"Cliente "+Integer.toString(Log.getIDCliente()));
 			LogMessage(false,"Estado: "+estado);
-			LogMessage(false,"Inicio: "+Log.getDataIni().toString());
+			LogMessage(false,"Início: "+Log.getDataIni().toString());
 			if(Log.getDataFim() != null) LogMessage(false,"Fim: "+Log.getDataFim().toString());		
-			LogMessage(false,"Politicas e numero de maquinas:");
-			LogMessage(false,"ROI: "+Integer.toString(Log.getPolicy(1).size())+" maquinas");
+			LogMessage(false,"Políticas e número de máquinas:");
+			LogMessage(false,"ROI: "+Integer.toString(Log.getPolicy(1).size())+" máquinas");
 			if (!Log.getPolicy(1).isEmpty()){
 				while (i < Log.getPolicy(1).size()){
-					LogMessage(false,"Maquina: "+Integer.toString(Log.getPolicy(1).get(i)));
+					LogMessage(false,"Máquina: "+Integer.toString(Log.getPolicy(1).get(i)));
 					i++;
 				}
 			}
 			if (!Log.getPolicy(2).isEmpty()){
 				LogMessage(false,"OnDemand: "+Integer.toString(Log.getPolicy(2).size()));
 				while (i < Log.getPolicy(2).size()){
-					LogMessage(false,"Maquina: "+Integer.toString(Log.getPolicy(2).get(i)));
+					LogMessage(false,"Máquina: "+Integer.toString(Log.getPolicy(2).get(i)));
 					i++;
 				}
 			}
 			if (!Log.getPolicy(3).isEmpty()){
 				LogMessage(false,"DefineCost: "+Integer.toString(Log.getPolicy(3).size()));
 				while (i < Log.getPolicy(3).size()){
-					LogMessage(false,"Maquina: "+Integer.toString(Log.getPolicy(3).get(i)));
+					LogMessage(false,"Máquina: "+Integer.toString(Log.getPolicy(3).get(i)));
 					i++;
 				}
 			}
 		}
 		else
-			LogWarn("Nao foram encontradas maquinas alugadas");
+			LogWarn("Não foram encontradas máquinas alugadas");
 	}
 	
 	@RequestMapping("CloudMachines/VerLog")
