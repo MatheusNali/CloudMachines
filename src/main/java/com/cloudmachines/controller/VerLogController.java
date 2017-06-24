@@ -4,14 +4,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Controller
-public class VerLogController {
 
-	private static Logger logger = LoggerFactory.getLogger("com.cloudmachines.controller.LogController");
-	//Necessário para log ele imprime tudo no console e cria um arquivo de log mais detalhado
+public class VerLogController {
 	
+	ThreadMaster ThMaster;
+	
+	private static Logger logger = LoggerFactory.getLogger(cmController.class.getClass());
+	//Necessário para log ele imprime tudo no console e cria um arquivo de log mais detalhado
+
 	//Função genérica de log, usando o separator para um destaque no log
 	//e o message para o texto que deve ser escrito
+	
 	public static void LogMessage(boolean separator, String message){
 		if(separator){
 			logger.info("---------------MENSAGEM-----------------");
@@ -25,37 +28,42 @@ public class VerLogController {
 		logger.warn(message);
 	}
 	
-	//Função que gera um log básico para o estado das maquinas de um cliente
-	public static void Standart_Log(){
-		if (AlugarMaqController.ThMaster != null && AlugarMaqController.ThMaster.getLog() != null){
-			Logging Log = AlugarMaqController.ThMaster.getLog();
-			String estado;
+	//Função que gera um log básico para o estado das máquinas de um cliente.
+	public void Standart_Log(){
+		if (ThMaster != null && ThMaster.getLog() != null){
+			Logging Log = ThMaster.getLog();
+			String Estado;
 			int i = 0;
-			if (Log.getEstado() == 1) estado = "Ativo";
-			else estado = "Inativo";
+			if (Log.getEstado() == 1) 
+				Estado = "Ativo";
+			else 
+				Estado = "Inativo";
 			LogMessage(true,"Cliente "+Integer.toString(Log.getIDCliente()));
-			LogMessage(false,"Estado: "+estado);
+			LogMessage(false,"Estado: "+Estado);
 			LogMessage(false,"Início: "+Log.getDataIni().toString());
 			if(Log.getDataFim() != null) LogMessage(false,"Fim: "+Log.getDataFim().toString());		
 			LogMessage(false,"Políticas e número de máquinas:");
-			LogMessage(false,"ROI: "+Integer.toString(Log.getPolicy(1).size())+" máquinas");
-			if (!Log.getPolicy(1).isEmpty()){
-				while (i < Log.getPolicy(1).size()){
-					LogMessage(false,"Máquina: "+Integer.toString(Log.getPolicy(1).get(i)));
+			LogMessage(false,"ROI: "+ThMaster.getArrLogROI().size()+" máquinas");
+			if (!ThMaster.getArrLogROI().isEmpty()){
+				while (i < ThMaster.getArrLogROI().size()){
+					LogMessage(false,"Máquina:"+ThMaster.getArrLogROI().get(i).getMaqID());
+					i++;
+
+				}
+			}
+			i=0;
+			if (!ThMaster.getArrLogOnDemand().isEmpty()){
+				LogMessage(false,"OnDemand: "+ThMaster.getArrLogOnDemand().size());
+				while (i < ThMaster.getArrLogOnDemand().size()){
+					LogMessage(false,"Máquina: "+ThMaster.getArrLogOnDemand().get(i));
 					i++;
 				}
 			}
-			if (!Log.getPolicy(2).isEmpty()){
-				LogMessage(false,"OnDemand: "+Integer.toString(Log.getPolicy(2).size()));
-				while (i < Log.getPolicy(2).size()){
-					LogMessage(false,"Máquina: "+Integer.toString(Log.getPolicy(2).get(i)));
-					i++;
-				}
-			}
-			if (!Log.getPolicy(3).isEmpty()){
-				LogMessage(false,"DefineCost: "+Integer.toString(Log.getPolicy(3).size()));
-				while (i < Log.getPolicy(3).size()){
-					LogMessage(false,"Máquina: "+Integer.toString(Log.getPolicy(3).get(i)));
+			i=0;
+			if (!ThMaster.getArrLogDefineCost().isEmpty()){
+				LogMessage(false,"DefineCost: "+ThMaster.getArrLogDefineCost().size());
+				while (i < ThMaster.getArrLogDefineCost().size()){
+					LogMessage(false,"Máquina: "+ThMaster.getArrLogDefineCost().get(i));
 					i++;
 				}
 			}
@@ -67,5 +75,10 @@ public class VerLogController {
 	@RequestMapping("CloudMachines/VerLog")
 	public String VerLog(){
 		return "VerLog";
+	}
+
+	public void add(ThreadMaster thMaster) {
+		ThMaster = thMaster;
+		
 	}		
 }

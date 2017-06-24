@@ -15,7 +15,12 @@ class ROI implements Runnable {
 	@Override
 	public void run() {
 		while (!Thread.currentThread().isInterrupted()) {
+			try {
+				Thread.currentThread();
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
 
+			}
 		}
 	}
 }
@@ -29,7 +34,12 @@ class OnDemand implements Runnable {
 	@Override
 	public void run() {
 		while (!Thread.currentThread().isInterrupted()) {
+			try {
+				Thread.currentThread();
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
 
+			}
 		}
 	}
 
@@ -44,17 +54,27 @@ class DefineCost implements Runnable {
 	@Override
 	public void run() {
 		while (!Thread.currentThread().isInterrupted()) {
-
+			try {
+				Thread.currentThread();
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+	
+			}
 		}
 	}
 
 }
 
 public class ThreadMaster {
+
 	ExecutorService execService;
-	static ArrayList<Future> Futures;
-	static Logging Log;
-	ArrayList<Logging> ArrLog;
+	ArrayList<Future> Futures;
+
+	Logging Log;
+	ArrayList<Logging> ArrLogROI;
+	ArrayList<Logging> ArrLogOnDemand;
+	ArrayList<Logging> ArrLogDefineCost;
+
 	int iDCliente = 42;
 	int ID = 0;
 	int maxThread = 5;
@@ -63,80 +83,82 @@ public class ThreadMaster {
 	public ThreadMaster() {
 		execService = Executors.newFixedThreadPool(maxThread);
 		Futures = new ArrayList<Future>();
-		ArrLog = new ArrayList<Logging>();
+		ArrLogROI = new ArrayList<Logging>();
+		ArrLogOnDemand = new ArrayList<Logging>();
+		ArrLogDefineCost = new ArrayList<Logging>();
 		Log = new Logging();
 	}
 
 	public void ROI(int nMaq) {
-		
+
 		for (int i = 0; i < nMaq; i++) {
-			if (par_nMaq<get_maxThread()){
+			if (par_nMaq < get_maxThread()) {
 				PreencheLog(Log, iDCliente);
 				Futures.add(execService.submit(new ROI()));
-				Log.setPolicy(1, ID);
-				ArrLog.add(Log);
+				ArrLogROI.add(Log);
 				ID++;
-			}
-			else{
-				i=nMaq;
-				VerLogController.LogWarn("A alocacao de maquinas nao pode ser completada");
+				System.out.println("laa"+ArrLogROI.get(i).getMaqID());
+			} else {
+				i = nMaq;
 			}
 		}
 	}
 
 	public void OnDemand(int nMaq) {
 		for (int i = 0; i < nMaq; i++) {
-			if (par_nMaq<get_maxThread()){
+			if (par_nMaq < get_maxThread()) {
 				PreencheLog(Log, iDCliente);
 				Futures.add(execService.submit(new OnDemand()));
-				Log.setPolicy(2, ID);
-				ArrLog.add(Log);
+				ArrLogOnDemand.add(Log);
 				ID++;
-			}
-			else{
-				i=nMaq;
-				VerLogController.LogWarn("A alocacao de maquinas nao pode ser completada");
+			} else {
+				i = nMaq;
 			}
 		}
 	}
 
 	public void DefineCost(int nMaq) {
 		for (int i = 0; i < nMaq; i++) {
-			if (par_nMaq<get_maxThread()){
+			if (par_nMaq < get_maxThread()) {
 				PreencheLog(Log, iDCliente);
 				Futures.add(execService.submit(new DefineCost()));
-				Log.setPolicy(3, ID);
-				ArrLog.add(Log);
+				ArrLogDefineCost.add(Log);
 				ID++;
-			}
-			else{
-				i=nMaq;
-				VerLogController.LogWarn("A alocacao de maquinas nao pode ser completada");
+			} else {
+				i = nMaq;
 			}
 		}
 	}
-	
-	public Logging getLog(){
+
+	public Logging getLog() {
 		return Log;
 	}
-	
-	public int get_maxThread(){
+
+	public int get_maxThread() {
 		par_nMaq++;
 		return maxThread;
 	}
 
-	private void PreencheLog(Logging Log, int iDCliente) {
+	public void PreencheLog(Logging Log, int iDCliente) {
 		Log.setDataIni(new Date());
 		Log.setEstado(1);
 		Log.setIDCliente(iDCliente);
-		
+		Log.setMaqID(ID);
 	}
-	
-	private ArrayList<Future> getFutures(){
+
+	public ArrayList<Future> getFutures() {
 		return Futures;
 	}
-	
-	private ArrayList<Logging> getArrLog(){
-		return ArrLog;
+
+	public ArrayList<Logging> getArrLogROI() {
+		return ArrLogROI;
+	}
+
+	public ArrayList<Logging> getArrLogOnDemand() {
+		return ArrLogOnDemand;
+	}
+
+	public ArrayList<Logging> getArrLogDefineCost() {
+		return ArrLogDefineCost;
 	}
 }
