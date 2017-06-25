@@ -68,36 +68,46 @@ class DefineCost implements Runnable {
 public class ThreadMaster {
 
 	ExecutorService execService;
-	ArrayList<Future> Futures;
+	ArrayList<Future> FuturesROI;
+	ArrayList<Future> FuturesOnDemand;
+	ArrayList<Future> FuturesDefineCost;
 
-	Logging Log;
-	ArrayList<Logging> ArrLogROI;
-	ArrayList<Logging> ArrLogOnDemand;
-	ArrayList<Logging> ArrLogDefineCost;
+	ArrayList<Logging> ArrLogROIAc;
+	ArrayList<Logging> ArrLogOnDemandAc;
+	ArrayList<Logging> ArrLogDefineCostAc;
 
+	ArrayList<Logging> ArrLogROIIn;
+	ArrayList<Logging> ArrLogOnDemandIn;
+	ArrayList<Logging> ArrLogDefineCostIn;
+
+	
 	int iDCliente = 42;
 	int ID = 0;
-	int maxThread = 5;
+	int maxThread = 100;
 	int par_nMaq = 0;
 
 	public ThreadMaster() {
 		execService = Executors.newFixedThreadPool(maxThread);
-		Futures = new ArrayList<Future>();
-		ArrLogROI = new ArrayList<Logging>();
-		ArrLogOnDemand = new ArrayList<Logging>();
-		ArrLogDefineCost = new ArrayList<Logging>();
-		Log = new Logging();
+		FuturesROI = new ArrayList<Future>();
+		FuturesOnDemand = new ArrayList<Future>();
+		FuturesDefineCost = new ArrayList<Future>();
+		ArrLogROIAc = new ArrayList<Logging>();
+		ArrLogOnDemandAc = new ArrayList<Logging>();
+		ArrLogDefineCostAc = new ArrayList<Logging>();
+		ArrLogROIIn = new ArrayList<Logging>();
+		ArrLogOnDemandIn = new ArrayList<Logging>();
+		ArrLogDefineCostIn = new ArrayList<Logging>();
+
 	}
 
 	public void ROI(int nMaq) {
 
 		for (int i = 0; i < nMaq; i++) {
 			if (par_nMaq < get_maxThread()) {
-				PreencheLog(Log, iDCliente);
-				Futures.add(execService.submit(new ROI()));
-				ArrLogROI.add(Log);
+				ArrLogROIAc.add(PreencheLog());
+				FuturesROI.add(execService.submit(new ROI()));
 				ID++;
-				System.out.println("laa"+ArrLogROI.get(i).getMaqID());
+
 			} else {
 				i = nMaq;
 			}
@@ -107,9 +117,8 @@ public class ThreadMaster {
 	public void OnDemand(int nMaq) {
 		for (int i = 0; i < nMaq; i++) {
 			if (par_nMaq < get_maxThread()) {
-				PreencheLog(Log, iDCliente);
-				Futures.add(execService.submit(new OnDemand()));
-				ArrLogOnDemand.add(Log);
+				FuturesOnDemand.add(execService.submit(new OnDemand()));
+				ArrLogOnDemandAc.add(PreencheLog());
 				ID++;
 			} else {
 				i = nMaq;
@@ -120,9 +129,8 @@ public class ThreadMaster {
 	public void DefineCost(int nMaq) {
 		for (int i = 0; i < nMaq; i++) {
 			if (par_nMaq < get_maxThread()) {
-				PreencheLog(Log, iDCliente);
-				Futures.add(execService.submit(new DefineCost()));
-				ArrLogDefineCost.add(Log);
+				FuturesDefineCost.add(execService.submit(new DefineCost()));
+				ArrLogDefineCostAc.add(PreencheLog());
 				ID++;
 			} else {
 				i = nMaq;
@@ -130,35 +138,53 @@ public class ThreadMaster {
 		}
 	}
 
-	public Logging getLog() {
-		return Log;
-	}
-
 	public int get_maxThread() {
 		par_nMaq++;
 		return maxThread;
 	}
 
-	public void PreencheLog(Logging Log, int iDCliente) {
+	public Logging PreencheLog() {
+		Logging Log = new Logging();
 		Log.setDataIni(new Date());
 		Log.setEstado(1);
 		Log.setIDCliente(iDCliente);
 		Log.setMaqID(ID);
+		
+		return Log;
 	}
 
-	public ArrayList<Future> getFutures() {
-		return Futures;
+	public ArrayList<Future> getFutures(int WhatFuture) {
+		if(WhatFuture == 1)
+			return FuturesROI;
+		else if(WhatFuture == 2)
+			return FuturesOnDemand;
+		else if(WhatFuture == 3)
+			return FuturesDefineCost;
+		
+		return null;
 	}
 
-	public ArrayList<Logging> getArrLogROI() {
-		return ArrLogROI;
+	public ArrayList<Logging> getArrLogROI(int Type) {
+		if(Type == 0)
+			return ArrLogROIIn;
+		else if(Type == 1)
+			return ArrLogROIAc;
+		return null;
 	}
 
-	public ArrayList<Logging> getArrLogOnDemand() {
-		return ArrLogOnDemand;
+	public ArrayList<Logging> getArrLogOnDemand(int Type) {
+		if(Type == 0)
+			return ArrLogOnDemandIn;
+		else if(Type == 1)
+			return ArrLogOnDemandAc;
+		return null;
 	}
 
-	public ArrayList<Logging> getArrLogDefineCost() {
-		return ArrLogDefineCost;
+	public ArrayList<Logging> getArrLogDefineCost(int Type) {
+		if(Type == 0)
+			return ArrLogDefineCostIn;
+		else if(Type == 1)
+			return ArrLogDefineCostAc;
+		return null;
 	}
 }
