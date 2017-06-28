@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" 
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><log>
+      <log_date>2017-06-27 23:48:42,148</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1448 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:42,160</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+No active profile set, falling back to default profiles: default
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:42,838</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e9f8e3f: startup date [Tue Jun 27 23:48:42 BRT 2017]; root of context hierarchy
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:43,095</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[background-preinit]o.h.v.i.u.Version</thread_logger>
+      <message>
+HV000001: Hibernate Validator 5.3.5.Final
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:47,982</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat initialized with port(s): 8080 (http)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,009</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardService</thread_logger>
+      <message>
+Starting service Tomcat
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,012</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardEngine</thread_logger>
+      <message>
+Starting Servlet Engine: Apache Tomcat/8.5.14
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,292</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.a.c.c.C.[.[.[/]</thread_logger>
+      <message>
+Initializing Spring embedded WebApplicationContext
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,293</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.w.c.ContextLoader</thread_logger>
+      <message>
+Root WebApplicationContext: initialization completed in 5462 ms
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,717</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.ServletRegistrationBean</thread_logger>
+      <message>
+Mapping servlet: 'dispatcherServlet' to [/]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,727</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'characterEncodingFilter' to: [/*]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,728</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,729</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:48,729</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'requestContextFilter' to: [/*]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,166</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Building JPA container EntityManagerFactory for persistence unit 'default'
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,198</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.j.i.u.LogHelper</thread_logger>
+      <message>
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,581</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.Version</thread_logger>
+      <message>
+HHH000412: Hibernate Core {5.0.12.Final}
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,583</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.c.Environment</thread_logger>
+      <message>
+HHH000206: hibernate.properties not found
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,586</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.c.Environment</thread_logger>
+      <message>
+HHH000021: Bytecode provider name : javassist
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,669</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.a.c.Version</thread_logger>
+      <message>
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:50,973</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.d.Dialect</thread_logger>
+      <message>
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:53,526</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.h.i.QueryTranslatorFactoryInitiator</thread_logger>
+      <message>
+HHH000397: Using ASTQueryTranslatorFactory
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:54,144</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,027</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerAdapter</thread_logger>
+      <message>
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e9f8e3f: startup date [Tue Jun 27 23:48:42 BRT 2017]; root of context hierarchy
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,229</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,231</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,232</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,234</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,236</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,237</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,239</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,240</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,241</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,252</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,253</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,330</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,361</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:55,488</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,459</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.d.a.OptionalLiveReloadServer</thread_logger>
+      <message>
+LiveReload server is running on port 35729
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,635</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Registering beans for JMX exposure on startup
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,713</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Initializing ProtocolHandler ["http-nio-8080"]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,742</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Starting ProtocolHandler ["http-nio-8080"]
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,782</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.t.u.n.NioSelectorPool</thread_logger>
+      <message>
+Using a shared selector for servlet write/read
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,824</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat started on port(s): 8080 (http)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:48:57,837</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Started CloudMachinesApplication in 16.312 seconds (JVM running for 17.922)
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,107</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.a.c.c.C.[.[.[/]</thread_logger>
+      <message>
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,108</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.s.w.s.DispatcherServlet</thread_logger>
+      <message>
+FrameworkServlet 'dispatcherServlet': initialization started
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,303</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.s.w.s.DispatcherServlet</thread_logger>
+      <message>
+FrameworkServlet 'dispatcherServlet': initialization completed in 195 ms
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,606</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.TemplateEngine</thread_logger>
+      <message>
+[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,754</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.t.AbstractTemplateResolver</thread_logger>
+      <message>
+[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,754</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.t.AbstractTemplateResolver</thread_logger>
+      <message>
+[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,755</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.m.AbstractMessageResolver</thread_logger>
+      <message>
+[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,755</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.m.AbstractMessageResolver</thread_logger>
+      <message>
+[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,764</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.T.CONFIG</thread_logger>
+      <message>
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:10,765</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-1]o.t.TemplateEngine</thread_logger>
+      <message>
+[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,607</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Cliente>42</Cliente>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,607</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Policy>ROI</Policy>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,607</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>0</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,607</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>1</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>2</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>3</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>4</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>5</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>6</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,608</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>7</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,609</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,609</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>8</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,609</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,609</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <ID>9</ID>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:14,609</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
+      <message>
+            <Status>Ativa</Status>
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:40,636</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-7]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e9f8e3f: startup date [Tue Jun 27 23:48:42 BRT 2017]; root of context hierarchy
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:40,641</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-7]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Unregistering JMX-exposed beans on shutdown
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:40,642</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-7]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Closing JPA EntityManagerFactory for persistence unit 'default'
+</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:41,422</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1448 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:41,423</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+No active profile set, falling back to default profiles: default
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:41,429</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5feacb69: startup date [Tue Jun 27 23:49:41 BRT 2017]; root of context hierarchy
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,050</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat initialized with port(s): 8080 (http)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,051</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardService</thread_logger>
+      <message>
+Starting service Tomcat
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,052</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardEngine</thread_logger>
+      <message>
+Starting Servlet Engine: Apache Tomcat/8.5.14
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,111</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.a.c.c.C.[.[.[/]</thread_logger>
+      <message>
+Initializing Spring embedded WebApplicationContext
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,112</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.w.c.ContextLoader</thread_logger>
+      <message>
+Root WebApplicationContext: initialization completed in 1684 ms
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,191</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.ServletRegistrationBean</thread_logger>
+      <message>
+Mapping servlet: 'dispatcherServlet' to [/]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,192</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'characterEncodingFilter' to: [/*]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,192</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,192</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,192</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'requestContextFilter' to: [/*]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,714</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Building JPA container EntityManagerFactory for persistence unit 'default'
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,715</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.j.i.u.LogHelper</thread_logger>
+      <message>
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:43,819</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.d.Dialect</thread_logger>
+      <message>
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,121</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.h.i.QueryTranslatorFactoryInitiator</thread_logger>
+      <message>
+HHH000397: Using ASTQueryTranslatorFactory
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,381</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,556</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerAdapter</thread_logger>
+      <message>
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5feacb69: startup date [Tue Jun 27 23:49:41 BRT 2017]; root of context hierarchy
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,585</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,585</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,585</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,586</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,586</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,587</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,587</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,588</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,589</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,593</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,594</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,631</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,633</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:45,687</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,333</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.d.a.OptionalLiveReloadServer</thread_logger>
+      <message>
+LiveReload server is running on port 35729
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,436</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Registering beans for JMX exposure on startup
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,454</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Initializing ProtocolHandler ["http-nio-8080"]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,455</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Starting ProtocolHandler ["http-nio-8080"]
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,459</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.t.u.n.NioSelectorPool</thread_logger>
+      <message>
+Using a shared selector for servlet write/read
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,479</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat started on port(s): 8080 (http)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:49:46,485</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Started CloudMachinesApplication in 5.161 seconds (JVM running for 66.57)
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:02,807</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-11]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5feacb69: startup date [Tue Jun 27 23:49:41 BRT 2017]; root of context hierarchy
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:02,809</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-11]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Unregistering JMX-exposed beans on shutdown
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:02,810</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-11]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Closing JPA EntityManagerFactory for persistence unit 'default'
+<	/message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:03,484</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1448 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:03,490</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+No active profile set, falling back to default profiles: default
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:03,494</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f51faa7: startup date [Tue Jun 27 23:50:03 BRT 2017]; root of context hierarchy
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,313</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat initialized with port(s): 8080 (http)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,315</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardService</thread_logger>
+      <message>
+Starting service Tomcat
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,315</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardEngine</thread_logger>
+      <message>
+Starting Servlet Engine: Apache Tomcat/8.5.14
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,367</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.a.c.c.C.[.[.[/]</thread_logger>
+      <message>
+Initializing Spring embedded WebApplicationContext
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,368</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.w.c.ContextLoader</thread_logger>
+      <message>
+Root WebApplicationContext: initialization completed in 1874 ms
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,439</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.ServletRegistrationBean</thread_logger>
+      <message>
+Mapping servlet: 'dispatcherServlet' to [/]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,441</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'characterEncodingFilter' to: [/*]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,441</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,441</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,442</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'requestContextFilter' to: [/*]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,902</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Building JPA container EntityManagerFactory for persistence unit 'default'
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:05,902</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.j.i.u.LogHelper</thread_logger>
+      <message>
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:06,026</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.d.Dialect</thread_logger>
+      <message>
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:06,993</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.h.i.QueryTranslatorFactoryInitiator</thread_logger>
+      <message>
+HHH000397: Using ASTQueryTranslatorFactory
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,142</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,284</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerAdapter</thread_logger>
+      <message>
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f51faa7: startup date [Tue Jun 27 23:50:03 BRT 2017]; root of context hierarchy
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,309</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,310</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,310</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,310</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,310</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,310</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,311</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,311</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,311</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,314</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,315</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,333</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,333</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:07,372</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,381</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.d.a.OptionalLiveReloadServer</thread_logger>
+      <message>
+LiveReload server is running on port 35729
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,580</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Registering beans for JMX exposure on startup
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,603</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Initializing ProtocolHandler ["http-nio-8080"]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,607</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Starting ProtocolHandler ["http-nio-8080"]
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,615</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.t.u.n.NioSelectorPool</thread_logger>
+      <message>
+Using a shared selector for servlet write/read
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,625</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat started on port(s): 8080 (http)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:08,629</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Started CloudMachinesApplication in 5.244 seconds (JVM running for 88.714)
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:24,763</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-18]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f51faa7: startup date [Tue Jun 27 23:50:03 BRT 2017]; root of context hierarchy
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:24,766</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-18]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Unregistering JMX-exposed beans on shutdown
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:24,767</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[Thread-18]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Closing JPA EntityManagerFactory for persistence unit 'default'
+	</message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:25,449</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1448 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:25,450</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+No active profile set, falling back to default profiles: default
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:25,456</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d02e197: startup date [Tue Jun 27 23:50:25 BRT 2017]; root of context hierarchy
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,450</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat initialized with port(s): 8080 (http)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,451</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardService</thread_logger>
+      <message>
+Starting service Tomcat
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,452</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.c.StandardEngine</thread_logger>
+      <message>
+Starting Servlet Engine: Apache Tomcat/8.5.14
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,493</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.a.c.c.C.[.[.[/]</thread_logger>
+      <message>
+Initializing Spring embedded WebApplicationContext
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,494</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.w.c.ContextLoader</thread_logger>
+      <message>
+Root WebApplicationContext: initialization completed in 2038 ms
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,565</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.ServletRegistrationBean</thread_logger>
+      <message>
+Mapping servlet: 'dispatcherServlet' to [/]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,567</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'characterEncodingFilter' to: [/*]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,569</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,571</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,572</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
+      <message>
+Mapping filter: 'requestContextFilter' to: [/*]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,958</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Building JPA container EntityManagerFactory for persistence unit 'default'
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:27,958</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.j.i.u.LogHelper</thread_logger>
+      <message>
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:28,055</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.d.Dialect</thread_logger>
+      <message>
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,020</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.h.h.i.QueryTranslatorFactoryInitiator</thread_logger>
+      <message>
+HHH000397: Using ASTQueryTranslatorFactory
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,180</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,324</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerAdapter</thread_logger>
+      <message>
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d02e197: startup date [Tue Jun 27 23:50:25 BRT 2017]; root of context hierarchy
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,346</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,346</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,347</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,347</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,347</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,348</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,348</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,348</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,349</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,358</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,359</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
+      <message>
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,371</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,372</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,389</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
+      <message>
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,869</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.d.a.OptionalLiveReloadServer</thread_logger>
+      <message>
+LiveReload server is running on port 35729
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,956</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Registering beans for JMX exposure on startup
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,967</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Initializing ProtocolHandler ["http-nio-8080"]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,968</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
+      <message>
+Starting ProtocolHandler ["http-nio-8080"]
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,972</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.a.t.u.n.NioSelectorPool</thread_logger>
+      <message>
+Using a shared selector for servlet write/read
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:29,996</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
+      <message>
+Tomcat started on port(s): 8080 (http)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:30,002</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
+      <message>
+Started CloudMachinesApplication in 4.639 seconds (JVM running for 110.086)
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:35,983</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin</thread_logger>
+      <message>
+Application shutdown requested.
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:35,983</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
+      <message>
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d02e197: startup date [Tue Jun 27 23:50:25 BRT 2017]; root of context hierarchy
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:35,989</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
+      <message>
+Unregistering JMX-exposed beans on shutdown
+	  </message>
+</log>
+<log>
+      <log_date>2017-06-27 23:50:35,990</log_date>
+      <log_level>INFO</log_level>
+      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
+      <message>
+Closing JPA EntityManagerFactory for persistence unit 'default'
+	  </message>
+</log>
