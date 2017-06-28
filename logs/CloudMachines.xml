@@ -1,446 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<log>
-      <log_date>2017-06-27 23:59:53,199</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
-      <message>
-Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1044 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:53,221</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
-      <message>
+Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 6512 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
 No active profile set, falling back to default profiles: default
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:53,875</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
-      <message>
-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c922f3c: startup date [Tue Jun 27 23:59:53 BRT 2017]; root of context hierarchy
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:54,091</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[background-preinit]o.h.v.i.u.Version</thread_logger>
-      <message>
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a2e4159: startup date [Wed Jun 28 00:36:24 BRT 2017]; root of context hierarchy
 HV000001: Hibernate Validator 5.3.5.Final
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:58,642</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
-      <message>
 Tomcat initialized with port(s): 8080 (http)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:58,665</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.a.c.c.StandardService</thread_logger>
-      <message>
 Starting service Tomcat
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:58,667</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.a.c.c.StandardEngine</thread_logger>
-      <message>
 Starting Servlet Engine: Apache Tomcat/8.5.14
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:58,964</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.a.c.c.C.[.[.[/]</thread_logger>
-      <message>
 Initializing Spring embedded WebApplicationContext
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:58,964</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.s.w.c.ContextLoader</thread_logger>
-      <message>
-Root WebApplicationContext: initialization completed in 5113 ms
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:59,556</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.s.b.w.s.ServletRegistrationBean</thread_logger>
-      <message>
+Root WebApplicationContext: initialization completed in 4628 ms
 Mapping servlet: 'dispatcherServlet' to [/]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:59,562</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
-      <message>
 Mapping filter: 'characterEncodingFilter' to: [/*]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:59,563</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
-      <message>
 Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:59,563</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
-      <message>
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-27 23:59:59,563</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[localhost-startStop-1]o.s.b.w.s.FilterRegistrationBean</thread_logger>
-      <message>
 Mapping filter: 'requestContextFilter' to: [/*]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:01,228</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
-      <message>
 Building JPA container EntityManagerFactory for persistence unit 'default'
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:01,267</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.j.i.u.LogHelper</thread_logger>
-      <message>
 HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:01,658</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.Version</thread_logger>
-      <message>
 HHH000412: Hibernate Core {5.0.12.Final}
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:01,660</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.c.Environment</thread_logger>
-      <message>
 HHH000206: hibernate.properties not found
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:01,663</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.c.Environment</thread_logger>
-      <message>
 HHH000021: Bytecode provider name : javassist
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:01,751</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.a.c.Version</thread_logger>
-      <message>
 HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:02,058</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.d.Dialect</thread_logger>
-      <message>
 HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:04,767</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.h.h.i.QueryTranslatorFactoryInitiator</thread_logger>
-      <message>
 HHH000397: Using ASTQueryTranslatorFactory
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:05,436</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
-      <message>
 Initialized JPA EntityManagerFactory for persistence unit 'default'
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,401</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerAdapter</thread_logger>
-      <message>
-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c922f3c: startup date [Tue Jun 27 23:59:53 BRT 2017]; root of context hierarchy
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,718</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a2e4159: startup date [Wed Jun 28 00:36:24 BRT 2017]; root of context hierarchy
 Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,720</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
-Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,721</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
 Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,721</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
-Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,722</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
 Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,723</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
-Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,723</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
-Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,723</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
-Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,724</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
 Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,732</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
+Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
+Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
+Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
+Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
+Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
 Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,733</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.m.m.a.RequestMappingHandlerMapping</thread_logger>
-      <message>
 Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,813</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
-      <message>
 Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,814</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
-      <message>
 Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:06,970</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.w.s.h.SimpleUrlHandlerMapping</thread_logger>
-      <message>
 Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,118</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.b.d.a.OptionalLiveReloadServer</thread_logger>
-      <message>
 LiveReload server is running on port 35729
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,311</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
-      <message>
 Registering beans for JMX exposure on startup
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,378</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
-      <message>
 Initializing ProtocolHandler ["http-nio-8080"]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,445</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.a.c.h.Http11NioProtocol</thread_logger>
-      <message>
 Starting ProtocolHandler ["http-nio-8080"]
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,495</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.a.t.u.n.NioSelectorPool</thread_logger>
-      <message>
 Using a shared selector for servlet write/read
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,547</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]o.s.b.c.e.t.TomcatEmbeddedServletContainer</thread_logger>
-      <message>
 Tomcat started on port(s): 8080 (http)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:09,563</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[restartedMain]c.c.CloudMachinesApplication</thread_logger>
-      <message>
-Started CloudMachinesApplication in 16.899 seconds (JVM running for 18.509)
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:15,962</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.a.c.c.C.[.[.[/]</thread_logger>
-      <message>
+Started CloudMachinesApplication in 15.041 seconds (JVM running for 16.537)
 Initializing Spring FrameworkServlet 'dispatcherServlet'
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:15,963</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.s.w.s.DispatcherServlet</thread_logger>
-      <message>
 FrameworkServlet 'dispatcherServlet': initialization started
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,049</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.s.w.s.DispatcherServlet</thread_logger>
-      <message>
-FrameworkServlet 'dispatcherServlet': initialization completed in 86 ms
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,393</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.TemplateEngine</thread_logger>
-      <message>
+FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
 [THYMELEAF] INITIALIZING TEMPLATE ENGINE
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,634</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.t.AbstractTemplateResolver</thread_logger>
-      <message>
 [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,634</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.t.AbstractTemplateResolver</thread_logger>
-      <message>
 [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,634</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.m.AbstractMessageResolver</thread_logger>
-      <message>
 [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,634</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.m.AbstractMessageResolver</thread_logger>
-      <message>
 [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,652</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.T.CONFIG</thread_logger>
-      <message>
 [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
 [THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
 [THYMELEAF] * Template modes:
-[THYMELEAF]     * HTML5
-[THYMELEAF]     * XHTML
 [THYMELEAF]     * LEGACYHTML5
 [THYMELEAF]     * VALIDXML
-[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
 [THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
 [THYMELEAF] * Template resolvers (in order):
 [THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
 [THYMELEAF] * Message resolvers (in order):
@@ -450,861 +74,199 @@ FrameworkServlet 'dispatcherServlet': initialization completed in 86 ms
 [THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
 [THYMELEAF]     * Prefix: "layout"
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:16,652</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-1]o.t.TemplateEngine</thread_logger>
-      <message>
 [THYMELEAF] TEMPLATE ENGINE INITIALIZED
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,780</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Cliente>42</Cliente>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,780</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Policy>ROI</Policy>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,780</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>0</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,780</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>1</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>2</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>3</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>4</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>5</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,781</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>6</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>7</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>8</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>9</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:00:22,782</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,084</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Cliente>42</Cliente>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,084</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Policy>ROI</Policy>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>0</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>1</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>2</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>3</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>4</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>5</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>6</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>7</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,085</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>8</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>9</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Cliente>42</Cliente>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Policy>OnDemand</Policy>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>10</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>11</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,086</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>12</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,087</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,087</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>13</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,087</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,087</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <ID>14</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:07,087</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-4]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,511</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Cliente>42</Cliente>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,512</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Policy>ROI</Policy>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,512</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>0</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,512</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,512</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>1</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,512</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,512</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>2</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,513</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,513</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>3</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,513</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,513</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>4</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,513</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,514</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>5</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,514</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,514</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>6</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,514</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,514</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>7</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>8</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
 <log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>9</ID>
-	  </message>
+	<Cliente>42</Cliente>
+	<Policy>ROI</Policy>
+		<ID>0</ID>
+			<Status>Ativa</Status>
+		<ID>1</ID>
+			<Status>Ativa</Status>
+		<ID>2</ID>
+			<Status>Ativa</Status>
+		<ID>3</ID>
+			<Status>Ativa</Status>
+		<ID>4</ID>
+			<Status>Ativa</Status>
+		<ID>5</ID>
+			<Status>Ativa</Status>
+		<ID>6</ID>
+			<Status>Ativa</Status>
+		<ID>7</ID>
+			<Status>Ativa</Status>
+		<ID>8</ID>
+			<Status>Ativa</Status>
+		<ID>9</ID>
+			<Status>Ativa</Status>
+</log>
+<log>
+	<Cliente>42</Cliente>
+	<Policy>ROI</Policy>
+		<ID>0</ID>
+			<Status>Ativa</Status>
+		<ID>1</ID>
+			<Status>Ativa</Status>
+		<ID>2</ID>
+			<Status>Ativa</Status>
+		<ID>3</ID>
+			<Status>Ativa</Status>
+		<ID>4</ID>
+			<Status>Ativa</Status>
+		<ID>5</ID>
+			<Status>Ativa</Status>
+		<ID>6</ID>
+			<Status>Ativa</Status>
+		<ID>7</ID>
+			<Status>Ativa</Status>
+		<ID>8</ID>
+			<Status>Ativa</Status>
+		<ID>9</ID>
+			<Status>Ativa</Status>
+	<Cliente>42</Cliente>
+	<Policy>OnDemand</Policy>
+		<ID>10
+			<Status>Ativa</Status>
+		</ID>
+		<ID>11
+			<Status>Ativa</Status>
+		</ID>
+		<ID>12
+			<Status>Ativa</Status>
+		</ID>
+		<ID>13
+			<Status>Ativa</Status>
+		</ID>
+		<ID>14
+			<Status>Ativa</Status>
+		</ID>
+</log>
+<log>
+	<Cliente>42</Cliente>
+	<Policy>ROI</Policy>
+		<ID>0</ID>
+			<Status>Ativa</Status>
+		<ID>1</ID>
+			<Status>Ativa</Status>
+		<ID>2</ID>
+			<Status>Ativa</Status>
+		<ID>3</ID>
+			<Status>Ativa</Status>
+		<ID>4</ID>
+			<Status>Ativa</Status>
+		<ID>5</ID>
+			<Status>Ativa</Status>
+		<ID>6</ID>
+			<Status>Ativa</Status>
+		<ID>7</ID>
+			<Status>Ativa</Status>
+		<ID>8</ID>
+			<Status>Ativa</Status>
+		<ID>9</ID>
+			<Status>Ativa</Status>
+	<Cliente>42</Cliente>
+	<Policy>OnDemand</Policy>
+		<ID>10
+			<Status>Ativa</Status>
+		</ID>
+		<ID>11
+			<Status>Ativa</Status>
+		</ID>
+		<ID>12
+			<Status>Ativa</Status>
+		</ID>
+		<ID>13
+			<Status>Ativa</Status>
+		</ID>
+		<ID>14
+			<Status>Ativa</Status>
+		</ID>
+	<Cliente>42</Cliente>
+	<Policy>DefineCost</Policy>
+		<ID>15
+			<Status>Ativa</Status>
+		</ID>
+		<ID>16
+			<Status>Ativa</Status>
+		</ID>
+		<ID>17
+			<Status>Ativa</Status>
+		</ID>
+		<ID>18
+			<Status>Ativa</Status>
+		</ID>
+		<ID>19
+			<Status>Ativa</Status>
+		</ID>
+</log>
+<log>
+	<Cliente>42</Cliente>
+	<Policy>ROI</Policy>
+		<ID>0</ID>
+			<Status>Ativa</Status>
+		<ID>1</ID>
+			<Status>Ativa</Status>
+		<ID>2</ID>
+			<Status>Ativa</Status>
+		<ID>3</ID>
+			<Status>Ativa</Status>
+		<ID>4</ID>
+			<Status>Ativa</Status>
+		<ID>5</ID>
+			<Status>Ativa</Status>
+		<ID>6</ID>
+			<Status>Ativa</Status>
+		<ID>7</ID>
+			<Status>Ativa</Status>
+		<ID>8</ID>
+			<Status>Ativa</Status>
+		<ID>9</ID>
+			<Status>Ativa</Status>
+		<ID>20</ID>
+			<Status>Ativa</Status>
+		<ID>21</ID>
+			<Status>Ativa</Status>
+		<ID>22</ID>
+			<Status>Ativa</Status>
+		<ID>23</ID>
+			<Status>Ativa</Status>
+		<ID>24</ID>
+			<Status>Ativa</Status>
+	<Cliente>42</Cliente>
+	<Policy>OnDemand</Policy>
+		<ID>10
+			<Status>Ativa</Status>
+		</ID>
+		<ID>11
+			<Status>Ativa</Status>
+		</ID>
+		<ID>12
+			<Status>Ativa</Status>
+		</ID>
+		<ID>13
+			<Status>Ativa</Status>
+		</ID>
+		<ID>14
+			<Status>Ativa</Status>
+		</ID>
+	<Cliente>42</Cliente>
+	<Policy>DefineCost</Policy>
+		<ID>15
+			<Status>Ativa</Status>
+		</ID>
+		<ID>16
+			<Status>Ativa</Status>
+		</ID>
+		<ID>17
+			<Status>Ativa</Status>
+		</ID>
+		<ID>18
+			<Status>Ativa</Status>
+		</ID>
+		<ID>19
+			<Status>Ativa</Status>
+		</ID>
 </log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Cliente>42</Cliente>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Policy>OnDemand</Policy>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>10</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,515</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>11</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>12</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>13</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>14</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Cliente>42</Cliente>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Policy>DefineCost</Policy>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>15</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,516</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>16</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>17</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>18</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <ID>19</ID>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:01:16,517</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[http-nio-8080-exec-9]j.l.Class</thread_logger>
-      <message>
-            <Status>Ativa</Status>
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:02:02,947</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin</thread_logger>
-      <message>
 Application shutdown requested.
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:02:02,947</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext</thread_logger>
-      <message>
-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c922f3c: startup date [Tue Jun 27 23:59:53 BRT 2017]; root of context hierarchy
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:02:02,953</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.j.e.a.AnnotationMBeanExporter</thread_logger>
-      <message>
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a2e4159: startup date [Wed Jun 28 00:36:24 BRT 2017]; root of context hierarchy
 Unregistering JMX-exposed beans on shutdown
-	  </message>
-</log>
-<log>
-      <log_date>2017-06-28 00:02:02,954</log_date>
-      <log_level>INFO</log_level>
-      <thread_logger>[RMI TCP Connection(2)-127.0.0.1]o.s.o.j.LocalContainerEntityManagerFactoryBean</thread_logger>
-      <message>
 Closing JPA EntityManagerFactory for persistence unit 'default'
-	  </message>
-</log>
