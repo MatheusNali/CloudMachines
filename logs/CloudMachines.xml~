@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 5724 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 6512 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
 No active profile set, falling back to default profiles: default
-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d86d760: startup date [Wed Jun 28 00:24:48 BRT 2017]; root of context hierarchy
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a2e4159: startup date [Wed Jun 28 00:36:24 BRT 2017]; root of context hierarchy
 HV000001: Hibernate Validator 5.3.5.Final
 Tomcat initialized with port(s): 8080 (http)
 Starting service Tomcat
 Starting Servlet Engine: Apache Tomcat/8.5.14
 Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 5242 ms
+Root WebApplicationContext: initialization completed in 4628 ms
 Mapping servlet: 'dispatcherServlet' to [/]
 Mapping filter: 'characterEncodingFilter' to: [/*]
 Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
@@ -25,16 +26,16 @@ HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
 HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 HHH000397: Using ASTQueryTranslatorFactory
 Initialized JPA EntityManagerFactory for persistence unit 'default'
-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d86d760: startup date [Wed Jun 28 00:24:48 BRT 2017]; root of context hierarchy
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a2e4159: startup date [Wed Jun 28 00:36:24 BRT 2017]; root of context hierarchy
 Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
-Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
-Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
-Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
-Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
 Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
-Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
 Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
+Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
+Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
+Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
+Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
 Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
+Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
 Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -46,10 +47,10 @@ Initializing ProtocolHandler ["http-nio-8080"]
 Starting ProtocolHandler ["http-nio-8080"]
 Using a shared selector for servlet write/read
 Tomcat started on port(s): 8080 (http)
-Started CloudMachinesApplication in 16.851 seconds (JVM running for 18.382)
+Started CloudMachinesApplication in 15.041 seconds (JVM running for 16.537)
 Initializing Spring FrameworkServlet 'dispatcherServlet'
 FrameworkServlet 'dispatcherServlet': initialization started
-FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
 [THYMELEAF] INITIALIZING TEMPLATE ENGINE
 [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
 [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
@@ -59,149 +60,11 @@ FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
 [THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
 [THYMELEAF] * Template modes:
 [THYMELEAF]     * LEGACYHTML5
-[THYMELEAF]     * VALIDXHTML
-[THYMELEAF]     * XHTML
-[THYMELEAF]     * XML
-[THYMELEAF]     * HTML5
-[THYMELEAF]     * VALIDXML
-[THYMELEAF] * Template resolvers (in order):
-[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-[THYMELEAF] * Message resolvers (in order):
-[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
-[THYMELEAF]     * Prefix: "th"
-[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
-[THYMELEAF]     * Prefix: "layout"
-[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
-[THYMELEAF] TEMPLATE ENGINE INITIALIZED
-<log>
-	<Cliente>42</Cliente>
-	<Policy>ROI</Policy>
-		<ID>0</ID>
-		<Status>Ativa</Status>
-		<ID>1</ID>
-		<Status>Ativa</Status>
-		<ID>2</ID>
-		<Status>Ativa</Status>
-		<ID>3</ID>
-		<Status>Ativa</Status>
-		<ID>4</ID>
-		<Status>Ativa</Status>
-		<ID>5</ID>
-		<Status>Ativa</Status>
-		<ID>6</ID>
-		<Status>Ativa</Status>
-		<ID>7</ID>
-		<Status>Ativa</Status>
-		<ID>8</ID>
-		<Status>Ativa</Status>
-		<ID>9</ID>
-		<Status>Ativa</Status>
-</log>
-<log>
-	<Cliente>42</Cliente>
-	<Policy>ROI</Policy>
-		<ID>0</ID>
-		<Status>Ativa</Status>
-		<ID>1</ID>
-		<Status>Ativa</Status>
-		<ID>2</ID>
-		<Status>Ativa</Status>
-		<ID>3</ID>
-		<Status>Ativa</Status>
-		<ID>4</ID>
-		<Status>Ativa</Status>
-		<ID>5</ID>
-		<Status>Ativa</Status>
-		<ID>6</ID>
-		<Status>Ativa</Status>
-		<ID>7</ID>
-		<Status>Ativa</Status>
-		<ID>8</ID>
-		<Status>Ativa</Status>
-		<ID>9</ID>
-		<Status>Ativa</Status>
-	<Cliente>42</Cliente>
-	<Policy>OnDemand</Policy>
-		<ID>10</ID>
-		<Status>Ativa</Status>
-		<ID>11</ID>
-		<Status>Ativa</Status>
-		<ID>12</ID>
-		<Status>Ativa</Status>
-		<ID>13</ID>
-		<Status>Ativa</Status>
-		<ID>14</ID>
-		<Status>Ativa</Status>
-</log>
-Application shutdown requested.
-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d86d760: startup date [Wed Jun 28 00:24:48 BRT 2017]; root of context hierarchy
-Unregistering JMX-exposed beans on shutdown
-Closing JPA EntityManagerFactory for persistence unit 'default'
-Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1316 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
-No active profile set, falling back to default profiles: default
-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efba971: startup date [Wed Jun 28 00:27:36 BRT 2017]; root of context hierarchy
-HV000001: Hibernate Validator 5.3.5.Final
-Tomcat initialized with port(s): 8080 (http)
-Starting service Tomcat
-Starting Servlet Engine: Apache Tomcat/8.5.14
-Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 4903 ms
-Mapping servlet: 'dispatcherServlet' to [/]
-Mapping filter: 'characterEncodingFilter' to: [/*]
-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-Mapping filter: 'httpPutFormContentFilter' to: [/*]
-Mapping filter: 'requestContextFilter' to: [/*]
-Building JPA container EntityManagerFactory for persistence unit 'default'
-HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-HHH000412: Hibernate Core {5.0.12.Final}
-HHH000206: hibernate.properties not found
-HHH000021: Bytecode provider name : javassist
-HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-HHH000397: Using ASTQueryTranslatorFactory
-Initialized JPA EntityManagerFactory for persistence unit 'default'
-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efba971: startup date [Wed Jun 28 00:27:36 BRT 2017]; root of context hierarchy
-Mapped "{[/CloudMachines/Header]}" onto public java.lang.String com.cloudmachines.controller.cmController.Header()
-Mapped "{[/CloudMachines/LiberarMaqQtn],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarQtn(int)
-Mapped "{[/CloudMachines/LiberarMaqID]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqID()
-Mapped "{[/CloudMachines/LiberarMaqQtn]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberarMaqQtn()
-Mapped "{[/CloudMachines/AlugarMaq]}" onto public java.lang.String com.cloudmachines.controller.cmController.AlugarMaq()
-Mapped "{[/CloudMachines/AlugarMaq],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.SalvarMaq(com.cloudmachines.modelSemBD.MaqAlugada)
-Mapped "{[/CloudMachines/LiberarMaqID],methods=[POST]}" onto public java.lang.String com.cloudmachines.controller.cmController.LiberariD(int)
-Mapped "{[/CloudMachines/VerLog]}" onto public java.lang.String com.cloudmachines.controller.cmController.VerLog()
-Mapped "{[/CloudMachines/Homepage]}" onto public java.lang.String com.cloudmachines.controller.cmController.Homepage()
-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-LiveReload server is running on port 35729
-Registering beans for JMX exposure on startup
-Initializing ProtocolHandler ["http-nio-8080"]
-Starting ProtocolHandler ["http-nio-8080"]
-Using a shared selector for servlet write/read
-Tomcat started on port(s): 8080 (http)
-Started CloudMachinesApplication in 15.169 seconds (JVM running for 16.71)
-Initializing Spring FrameworkServlet 'dispatcherServlet'
-FrameworkServlet 'dispatcherServlet': initialization started
-FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
-[THYMELEAF] INITIALIZING TEMPLATE ENGINE
-[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
-[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
-[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
-[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
-[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
-[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
-[THYMELEAF] * Template modes:
-[THYMELEAF]     * XML
 [THYMELEAF]     * VALIDXML
 [THYMELEAF]     * XHTML
 [THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
 [THYMELEAF]     * HTML5
-[THYMELEAF]     * LEGACYHTML5
 [THYMELEAF] * Template resolvers (in order):
 [THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
 [THYMELEAF] * Message resolvers (in order):
@@ -261,16 +124,21 @@ FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
 			<Status>Ativa</Status>
 	<Cliente>42</Cliente>
 	<Policy>OnDemand</Policy>
-		<ID>10</ID>
+		<ID>10
 			<Status>Ativa</Status>
-		<ID>11</ID>
+		</ID>
+		<ID>11
 			<Status>Ativa</Status>
-		<ID>12</ID>
+		</ID>
+		<ID>12
 			<Status>Ativa</Status>
-		<ID>13</ID>
+		</ID>
+		<ID>13
 			<Status>Ativa</Status>
-		<ID>14</ID>
+		</ID>
+		<ID>14
 			<Status>Ativa</Status>
+		</ID>
 </log>
 <log>
 	<Cliente>42</Cliente>
@@ -297,35 +165,108 @@ FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
 			<Status>Ativa</Status>
 	<Cliente>42</Cliente>
 	<Policy>OnDemand</Policy>
-		<ID>10</ID>
+		<ID>10
 			<Status>Ativa</Status>
-		<ID>11</ID>
+		</ID>
+		<ID>11
 			<Status>Ativa</Status>
-		<ID>12</ID>
+		</ID>
+		<ID>12
 			<Status>Ativa</Status>
-		<ID>13</ID>
+		</ID>
+		<ID>13
 			<Status>Ativa</Status>
-		<ID>14</ID>
+		</ID>
+		<ID>14
 			<Status>Ativa</Status>
+		</ID>
 	<Cliente>42</Cliente>
 	<Policy>DefineCost</Policy>
-		<ID>15</ID>
+		<ID>15
 			<Status>Ativa</Status>
-		<ID>16</ID>
+		</ID>
+		<ID>16
 			<Status>Ativa</Status>
-		<ID>17</ID>
+		</ID>
+		<ID>17
 			<Status>Ativa</Status>
-		<ID>18</ID>
+		</ID>
+		<ID>18
 			<Status>Ativa</Status>
-		<ID>19</ID>
+		</ID>
+		<ID>19
 			<Status>Ativa</Status>
+		</ID>
 </log>
-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4efba971: startup date [Wed Jun 28 00:27:36 BRT 2017]; root of context hierarchy
+<log>
+	<Cliente>42</Cliente>
+	<Policy>ROI</Policy>
+		<ID>0</ID>
+			<Status>Ativa</Status>
+		<ID>1</ID>
+			<Status>Ativa</Status>
+		<ID>2</ID>
+			<Status>Ativa</Status>
+		<ID>3</ID>
+			<Status>Ativa</Status>
+		<ID>4</ID>
+			<Status>Ativa</Status>
+		<ID>5</ID>
+			<Status>Ativa</Status>
+		<ID>6</ID>
+			<Status>Ativa</Status>
+		<ID>7</ID>
+			<Status>Ativa</Status>
+		<ID>8</ID>
+			<Status>Ativa</Status>
+		<ID>9</ID>
+			<Status>Ativa</Status>
+		<ID>20</ID>
+			<Status>Ativa</Status>
+		<ID>21</ID>
+			<Status>Ativa</Status>
+		<ID>22</ID>
+			<Status>Ativa</Status>
+		<ID>23</ID>
+			<Status>Ativa</Status>
+		<ID>24</ID>
+			<Status>Ativa</Status>
+	<Cliente>42</Cliente>
+	<Policy>OnDemand</Policy>
+		<ID>10
+			<Status>Ativa</Status>
+		</ID>
+		<ID>11
+			<Status>Ativa</Status>
+		</ID>
+		<ID>12
+			<Status>Ativa</Status>
+		</ID>
+		<ID>13
+			<Status>Ativa</Status>
+		</ID>
+		<ID>14
+			<Status>Ativa</Status>
+		</ID>
+	<Cliente>42</Cliente>
+	<Policy>DefineCost</Policy>
+		<ID>15
+			<Status>Ativa</Status>
+		</ID>
+		<ID>16
+			<Status>Ativa</Status>
+		</ID>
+		<ID>17
+			<Status>Ativa</Status>
+		</ID>
+		<ID>18
+			<Status>Ativa</Status>
+		</ID>
+		<ID>19
+			<Status>Ativa</Status>
+		</ID>
+</log>
+Application shutdown requested.
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a2e4159: startup date [Wed Jun 28 00:36:24 BRT 2017]; root of context hierarchy
 Unregistering JMX-exposed beans on shutdown
 Closing JPA EntityManagerFactory for persistence unit 'default'
-Starting CloudMachinesApplication on DESKTOP-RRGQGAU with PID 1316 (C:\Users\augus\CloudMachines\target\classes started by augus in C:\Users\augus\CloudMachines)
-No active profile set, falling back to default profiles: default
-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b1827ec: startup date [Wed Jun 28 00:31:35 BRT 2017]; root of context hierarchy
-Tomcat initialized with port(s): 8080 (http)
-Starting service Tomcat
-Starting Servlet Engine: Apache Tomcat/8.5.14

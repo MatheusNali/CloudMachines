@@ -6,15 +6,16 @@
       <pattern>%msg%n</pattern>
     </encoder>
   </appender>
-
-  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+  
+  <appender name="FILE2" class="ch.qos.logback.core.FileAppender">
+    <file>logs/CloudMachines.log</file>
     <encoder>
-      <pattern>%level = "%msg"%n</pattern>
+      <pattern>%date || %level - "%msg"%n</pattern>
     </encoder>
   </appender>
 
   <root level="info">
     <appender-ref ref="FILE" />
-    <appender-ref ref="STDOUT" />
+	<appender-ref ref="FILE2" />
   </root>
 </configuration>

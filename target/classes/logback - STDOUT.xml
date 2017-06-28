@@ -3,13 +3,7 @@
   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
     <file>logs/CloudMachines.xml</file>
     <encoder>
-      <pattern>&lt;log&gt;%n
-      &lt;log_date&gt;%date&lt;/log_date&gt;%n
-      &lt;log_level&gt;%level&lt;/log_level&gt;%n
-      &lt;thread_logger&gt;[%thread]%logger{10}&lt;/thread_logger&gt;%n
-      &lt;message&gt;%n%msg%n&lt;/message&gt;%n
-&lt;/log&gt;%n
-      </pattern>
+      <pattern>%msg%n</pattern>
     </encoder>
   </appender>
 
