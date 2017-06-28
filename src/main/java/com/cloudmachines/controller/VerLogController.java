@@ -53,31 +53,35 @@ public class VerLogController {
 			if (ArrLogAc.size() != 0) {
 
 				if (ArrLogAc.size() != 0) {
-					LogMessage("<Cliente>" + ArrLogAc.get(0).getIDCliente() + "</Cliente>");
-					LogMessage("<Policy>" + "ROI" + "</Policy>");
+					LogMessage("<Client>" + ArrLogAc.get(0).getIDCliente() + "</Client>");
+					LogMessage("	<Policy>" + "ROI" + "</Policy>");
 
 					for (int j = 0; j < ArrLogAc.size(); j++) {
-						LogMessage("	<ID>" + ArrLogAc.get(j).getMaqID() + "</ID>");
+						LogMessage("	<Machine>");
+						LogMessage("		<ID>" + ArrLogAc.get(j).getMaqID() + "</ID>");
 						LogMessage("		<Status>" + "Ativa" + "</Status>");
+						LogMessage("	</Machine>");
 					}
 
 					if (ArrLogIn.size() != 0) {
 						for (int j = 0; j < ArrLogIn.size(); j++) {
-							LogMessage("	<ID>" + ArrLogIn.get(j).getMaqID());
+							LogMessage("	<Machine>");
+							LogMessage("		<ID>" + ArrLogIn.get(j).getMaqID() + "</ID>");
 							LogMessage("		<Status>" + "Inativa" + "</Status>");
-							LogMessage("	</ID>");
+							LogMessage("	</Machine>");
 						}
 					}
 				}
 			}
 
 			else if (ArrLogIn.size() != 0) {
-				LogMessage("<Cliente>" + ArrLogIn.get(0).getIDCliente() + "</Cliente>");
-				LogMessage("<Policy>" + "ROI" + "</Policy>");
+				LogMessage("<Client>" + ArrLogIn.get(0).getIDCliente() + "</Client>");
+				LogMessage("	<Policy>" + "ROI" + "</Policy>");
 				for (int j = 0; j < ArrLogIn.size(); j++) {
-					LogMessage("	<ID>" + ArrLogIn.get(j).getMaqID());
+					LogMessage("	<Machine>");
+					LogMessage("		<ID>" + ArrLogIn.get(j).getMaqID() + "</ID>");
 					LogMessage("		<Status>" + "Ativa" + "</Status>");
-					LogMessage("	</ID>");
+					LogMessage("	</Machine>");
 				}
 			}
 
@@ -87,32 +91,35 @@ public class VerLogController {
 			if (ArrLogAc.size() != 0) {
 
 				if (ArrLogAc.size() != 0) {
-					LogMessage("<Cliente>" + ArrLogAc.get(0).getIDCliente() + "</Cliente>");
-					LogMessage("<Policy>" + "OnDemand" + "</Policy>");
+					LogMessage("<Client>" + ArrLogAc.get(0).getIDCliente() + "</Client>");
+					LogMessage("	<Policy>" + "OnDemand" + "</Policy>");
 
 					for (int j = 0; j < ArrLogAc.size(); j++) {
-						LogMessage("	<ID>" + ArrLogAc.get(j).getMaqID());
+						LogMessage("	<Machine>");
+						LogMessage("		<ID>" + ArrLogAc.get(j).getMaqID() + "</ID>");
 						LogMessage("		<Status>" + "Ativa" + "</Status>");
-						LogMessage("	</ID>");
+						LogMessage("	</Machine>");
 					}
 
 					if (ArrLogIn.size() != 0) {
 						for (int j = 0; j < ArrLogIn.size(); j++) {
-							LogMessage("	<ID>" + ArrLogIn.get(j).getMaqID());
+							LogMessage("	<Machine>");
+							LogMessage("		<ID>" + ArrLogIn.get(j).getMaqID() + "</ID>");
 							LogMessage("		<Status>" + "Inativa" + "</Status>");
-							LogMessage("	</ID>");
+							LogMessage("	</Machine>");
 						}
 					}
 				}
 			}
 
 			else if (ArrLogIn.size() != 0) {
-				LogMessage("<Cliente>" + ArrLogIn.get(0).getIDCliente() + "</Cliente>");
-				LogMessage("<Policy>" + "OnDemand" + "</Policy>");
+				LogMessage("<Client>" + ArrLogIn.get(0).getIDCliente() + "</Client>");
+				LogMessage("	<Policy>" + "OnDemand" + "</Policy>");
 				for (int j = 0; j < ArrLogIn.size(); j++) {
-					LogMessage("	<ID>" + ArrLogIn.get(j).getMaqID());
+					LogMessage("	<Machine>");
+					LogMessage("		<ID>" + ArrLogIn.get(j).getMaqID() + "</ID>");
 					LogMessage("		<Status>" + "Inativa" + "</Status>");
-					LogMessage("	</ID>");
+					LogMessage("	</Machine>");
 				}
 			}
 
@@ -121,32 +128,35 @@ public class VerLogController {
 			if (ArrLogAc.size() != 0) {
 
 				if (ArrLogAc.size() != 0) {
-					LogMessage("<Cliente>" + ArrLogAc.get(0).getIDCliente() + "</Cliente>");
-					LogMessage("<Policy>" + "DefineCost" + "</Policy>");
+					LogMessage("<Client>" + ArrLogAc.get(0).getIDCliente() + "</Client>");
+					LogMessage("	<Policy>" + "DefineCost" + "</Policy>");
 
 					for (int j = 0; j < ArrLogAc.size(); j++) {
-						LogMessage("	<ID>" + ArrLogAc.get(j).getMaqID());
+						LogMessage("	<Machine>");
+						LogMessage("		<ID>" + ArrLogAc.get(j).getMaqID() + "</ID>");
 						LogMessage("		<Status>" + "Ativa" + "</Status>");
-						LogMessage("	</ID>");
+						LogMessage("	</Machine>");
 					}
 
 					if (ArrLogIn.size() != 0) {
 						for (int j = 0; j < ArrLogIn.size(); j++) {
-							LogMessage("	<ID>" + ArrLogIn.get(j).getMaqID());
+							LogMessage("	<Machine>");
+							LogMessage("		<ID>" + ArrLogIn.get(j).getMaqID() + "</ID>");
 							LogMessage("		<Status>" + "Inativa" + "</Status>");
-							LogMessage("	</ID>");
+							LogMessage("	</Machine>");
 						}
 					}
 				}
 			}
 
 			else if (ArrLogIn.size() != 0) {
-				LogMessage("<Cliente>" + ArrLogIn.get(0).getIDCliente() + "</Cliente>");
-				LogMessage("<Policy>" + "DefineCost" + "</Policy>");
+				LogMessage("<Client>" + ArrLogIn.get(0).getIDCliente() + "</Client>");
+				LogMessage("	<Policy>" + "DefineCost" + "</Policy>");
 				for (int j = 0; j < ArrLogIn.size(); j++) {
-					LogMessage("	<ID>" + ArrLogIn.get(j).getMaqID());
+					LogMessage("	<Machine>");
+					LogMessage("		<ID>" + ArrLogIn.get(j).getMaqID() + "</ID>");
 					LogMessage("		<Status>" + "Inativa" + "</Status>");
-					LogMessage("	</ID>");
+					LogMessage("	</Machine>");
 				}
 			}
 			LogInit(false);
